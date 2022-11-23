@@ -427,24 +427,35 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    //通过开启或关闭这个开关，控制最后一行分割线的长度
-    //Turn on or off the length of the last line of dividers by controlling this switch
-    BOOL needLastLineFromZeroToMax = NO;
-    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
-           [cell setSeparatorInset:UIEdgeInsetsMake(0, 75, 0, 0)];
-        if (needLastLineFromZeroToMax && indexPath.row == (self.provider.conversationList.count - 1)) {
-            [cell setSeparatorInset:UIEdgeInsetsZero];
+    TIMConversationListSectionType type = indexPath.section;
+    switch (type) {
+        case TIMConversationListSectionTypeService:
+            break;
+        case TIMConversationListSectionTypeChat:
+        {
+            //通过开启或关闭这个开关，控制最后一行分割线的长度
+            //Turn on or off the length of the last line of dividers by controlling this switch
+            BOOL needLastLineFromZeroToMax = NO;
+            if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+                   [cell setSeparatorInset:UIEdgeInsetsMake(0, 75, 0, 0)];
+                if (needLastLineFromZeroToMax && indexPath.row == (self.provider.conversationList.count - 1)) {
+                    [cell setSeparatorInset:UIEdgeInsetsZero];
+                }
+            }
+
+            // Prevent the cell from inheriting the Table View's margin settings
+            if (needLastLineFromZeroToMax && [cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
+                [cell setPreservesSuperviewLayoutMargins:NO];
+            }
+
+            // Explictly set your cell's layout margins
+            if (needLastLineFromZeroToMax && [cell respondsToSelector:@selector(setLayoutMargins:)]) {
+                [cell setLayoutMargins:UIEdgeInsetsZero];
+            }
         }
-    }
-
-    // Prevent the cell from inheriting the Table View's margin settings
-    if (needLastLineFromZeroToMax && [cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]) {
-        [cell setPreservesSuperviewLayoutMargins:NO];
-    }
-
-    // Explictly set your cell's layout margins
-    if (needLastLineFromZeroToMax && [cell respondsToSelector:@selector(setLayoutMargins:)]) {
-        [cell setLayoutMargins:UIEdgeInsetsZero];
+            break;
+        case TIMConversationListSectionTypeNumber:
+            break;
     }
 }
 
