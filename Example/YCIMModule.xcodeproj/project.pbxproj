@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18457C5E292E026100C34991 /* TIMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C2F292E026000C34991 /* TIMHomeViewController.m */; };
+		18457C60292E026100C34991 /* TIMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C34292E026000C34991 /* TIMTabbarController.m */; };
+		18457C61292E026100C34991 /* TIMContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C36292E026000C34991 /* TIMContactViewController.m */; };
+		18457C62292E026100C34991 /* TIMPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3A292E026100C34991 /* TIMPopView.m */; };
+		18457C63292E026100C34991 /* TIMPopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3B292E026100C34991 /* TIMPopCell.m */; };
+		18457C64292E026100C34991 /* TIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C40292E026100C34991 /* TIMManager.m */; };
+		18457C65292E026100C34991 /* UIButton+TIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C43292E026100C34991 /* UIButton+TIM.m */; };
+		18457C66292E026100C34991 /* TIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C45292E026100C34991 /* TIMImage.m */; };
+		18457C67292E026100C34991 /* TIMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C49292E026100C34991 /* TIMNavigationController.m */; };
+		18457C68292E026100C34991 /* TIMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* TIMBaseViewController.m */; };
+		18457C69292E026100C34991 /* TIMConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4C292E026100C34991 /* TIMConversationListController.m */; };
+		18457C6A292E026100C34991 /* TIMFoldListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4D292E026100C34991 /* TIMFoldListViewController.m */; };
+		18457C6B292E026100C34991 /* TIMMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4E292E026100C34991 /* TIMMessageViewController.m */; };
+		18457C6C292E026100C34991 /* TIMFriendDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C53292E026100C34991 /* TIMFriendDynamicsViewController.m */; };
+		18457C6D292E026100C34991 /* TUIChatCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */; };
+		18457C6E292E026100C34991 /* TUIConversationCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */; };
+		18457C6F292E026100C34991 /* TUICoreCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */; };
+		18457C70292E026100C34991 /* TUIDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C59292E026100C34991 /* TUIDemo.bundle */; };
+		18457C71292E026100C34991 /* TUIDemoTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C5A292E026100C34991 /* TUIDemoTheme.bundle */; };
+		18457C72292E026100C34991 /* TIMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C5C292E026100C34991 /* TIMLoginViewController.m */; };
 		39180815620D7B24ADDC7E08 /* Pods_YCIMModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E6AF0FA224F91138D3827D /* Pods_YCIMModule_Tests.framework */; };
 		3E0109E638764E67CA60AD94 /* Pods_YCIMModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24B4681AD8EACF4B32A77B0 /* Pods_YCIMModule_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -15,7 +35,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* YIMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* YIMAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* YIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* YIMViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,7 +42,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +55,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BEF27B23A0B4CA0340E2398 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		11DF042EB01A993A9333AD2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0BEF27B23A0B4CA0340E2398 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		11DF042EB01A993A9333AD2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		18457C2E292E026000C34991 /* TIMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMHomeViewController.h; sourceTree = "<group>"; };
+		18457C2F292E026000C34991 /* TIMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMHomeViewController.m; sourceTree = "<group>"; };
+		18457C33292E026000C34991 /* TIMTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMTabbarController.h; sourceTree = "<group>"; };
+		18457C34292E026000C34991 /* TIMTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMTabbarController.m; sourceTree = "<group>"; };
+		18457C36292E026000C34991 /* TIMContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMContactViewController.m; sourceTree = "<group>"; };
+		18457C37292E026000C34991 /* TIMContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMContactViewController.h; sourceTree = "<group>"; };
+		18457C3A292E026100C34991 /* TIMPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMPopView.m; sourceTree = "<group>"; };
+		18457C3B292E026100C34991 /* TIMPopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMPopCell.m; sourceTree = "<group>"; };
+		18457C3C292E026100C34991 /* TIMPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMPopView.h; sourceTree = "<group>"; };
+		18457C3D292E026100C34991 /* TIMPopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMPopCell.h; sourceTree = "<group>"; };
+		18457C3F292E026100C34991 /* TIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMManager.h; sourceTree = "<group>"; };
+		18457C40292E026100C34991 /* TIMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMManager.m; sourceTree = "<group>"; };
+		18457C42292E026100C34991 /* UIButton+TIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TIM.h"; sourceTree = "<group>"; };
+		18457C43292E026100C34991 /* UIButton+TIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TIM.m"; sourceTree = "<group>"; };
+		18457C44292E026100C34991 /* TIMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMImage.h; sourceTree = "<group>"; };
+		18457C45292E026100C34991 /* TIMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMImage.m; sourceTree = "<group>"; };
+		18457C47292E026100C34991 /* TIMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMBaseViewController.h; sourceTree = "<group>"; };
+		18457C48292E026100C34991 /* TIMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMNavigationController.h; sourceTree = "<group>"; };
+		18457C49292E026100C34991 /* TIMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMNavigationController.m; sourceTree = "<group>"; };
+		18457C4A292E026100C34991 /* TIMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMBaseViewController.m; sourceTree = "<group>"; };
+		18457C4C292E026100C34991 /* TIMConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMConversationListController.m; sourceTree = "<group>"; };
+		18457C4D292E026100C34991 /* TIMFoldListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMFoldListViewController.m; sourceTree = "<group>"; };
+		18457C4E292E026100C34991 /* TIMMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMMessageViewController.m; sourceTree = "<group>"; };
+		18457C4F292E026100C34991 /* TIMConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMConversationListController.h; sourceTree = "<group>"; };
+		18457C50292E026100C34991 /* TIMMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMMessageViewController.h; sourceTree = "<group>"; };
+		18457C51292E026100C34991 /* TIMFoldListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMFoldListViewController.h; sourceTree = "<group>"; };
+		18457C53292E026100C34991 /* TIMFriendDynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMFriendDynamicsViewController.m; sourceTree = "<group>"; };
+		18457C54292E026100C34991 /* TIMFriendDynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMFriendDynamicsViewController.h; sourceTree = "<group>"; };
+		18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIChatCustomTheme.bundle; sourceTree = "<group>"; };
+		18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIConversationCustomTheme.bundle; sourceTree = "<group>"; };
+		18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUICoreCustomTheme.bundle; sourceTree = "<group>"; };
+		18457C59292E026100C34991 /* TUIDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIDemo.bundle; sourceTree = "<group>"; };
+		18457C5A292E026100C34991 /* TUIDemoTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIDemoTheme.bundle; sourceTree = "<group>"; };
+		18457C5C292E026100C34991 /* TIMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMLoginViewController.m; sourceTree = "<group>"; };
+		18457C5D292E026100C34991 /* TIMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMLoginViewController.h; sourceTree = "<group>"; };
+		18457C73292E044800C34991 /* YCIMModule_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YCIMModule_Example.entitlements; sourceTree = "<group>"; };
 		372E9D467C0B246A9C31135D /* Pods-YCIMModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCIMModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-YCIMModule_Example/Pods-YCIMModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5EBEFEB10143A18532EDDAEE /* Pods-YCIMModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCIMModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YCIMModule_Tests/Pods-YCIMModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YCIMModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCIMModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +105,6 @@
 		6003F59B195388D20070C39A /* YCIMModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YCIMModule-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* YIMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* YIMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* YIMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* YIMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* YCIMModule_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCIMModule_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,8 +113,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		765A89ADDB61DB9734B29AE2 /* YCIMModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YCIMModule.podspec; path = ../YCIMModule.podspec; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		765A89ADDB61DB9734B29AE2 /* YCIMModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YCIMModule.podspec; path = ../YCIMModule.podspec; sourceTree = "<group>"; };
 		996C753C824EB05855EDDFC5 /* Pods-YCIMModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCIMModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-YCIMModule_Tests/Pods-YCIMModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A24B4681AD8EACF4B32A77B0 /* Pods_YCIMModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCIMModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A281E2E4EE70BFE30A5C68 /* Pods-YCIMModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCIMModule_Example.release.xcconfig"; path = "Target Support Files/Pods-YCIMModule_Example/Pods-YCIMModule_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +146,138 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18457C2C292E026000C34991 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				18457C2D292E026000C34991 /* HOME */,
+				18457C32292E026000C34991 /* Navigation */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		18457C2D292E026000C34991 /* HOME */ = {
+			isa = PBXGroup;
+			children = (
+				18457C2E292E026000C34991 /* TIMHomeViewController.h */,
+				18457C2F292E026000C34991 /* TIMHomeViewController.m */,
+			);
+			path = HOME;
+			sourceTree = "<group>";
+		};
+		18457C32292E026000C34991 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				18457C33292E026000C34991 /* TIMTabbarController.h */,
+				18457C34292E026000C34991 /* TIMTabbarController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		18457C35292E026000C34991 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				18457C36292E026000C34991 /* TIMContactViewController.m */,
+				18457C37292E026000C34991 /* TIMContactViewController.h */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		18457C38292E026100C34991 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18457C39292E026100C34991 /* Pop */,
+				18457C3E292E026100C34991 /* TIMManager */,
+				18457C41292E026100C34991 /* Extension */,
+				18457C44292E026100C34991 /* TIMImage.h */,
+				18457C45292E026100C34991 /* TIMImage.m */,
+				18457C46292E026100C34991 /* Base */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		18457C39292E026100C34991 /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				18457C3A292E026100C34991 /* TIMPopView.m */,
+				18457C3B292E026100C34991 /* TIMPopCell.m */,
+				18457C3C292E026100C34991 /* TIMPopView.h */,
+				18457C3D292E026100C34991 /* TIMPopCell.h */,
+			);
+			path = Pop;
+			sourceTree = "<group>";
+		};
+		18457C3E292E026100C34991 /* TIMManager */ = {
+			isa = PBXGroup;
+			children = (
+				18457C3F292E026100C34991 /* TIMManager.h */,
+				18457C40292E026100C34991 /* TIMManager.m */,
+			);
+			path = TIMManager;
+			sourceTree = "<group>";
+		};
+		18457C41292E026100C34991 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18457C42292E026100C34991 /* UIButton+TIM.h */,
+				18457C43292E026100C34991 /* UIButton+TIM.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18457C46292E026100C34991 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18457C47292E026100C34991 /* TIMBaseViewController.h */,
+				18457C48292E026100C34991 /* TIMNavigationController.h */,
+				18457C49292E026100C34991 /* TIMNavigationController.m */,
+				18457C4A292E026100C34991 /* TIMBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18457C4B292E026100C34991 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				18457C4C292E026100C34991 /* TIMConversationListController.m */,
+				18457C4D292E026100C34991 /* TIMFoldListViewController.m */,
+				18457C4E292E026100C34991 /* TIMMessageViewController.m */,
+				18457C4F292E026100C34991 /* TIMConversationListController.h */,
+				18457C50292E026100C34991 /* TIMMessageViewController.h */,
+				18457C51292E026100C34991 /* TIMFoldListViewController.h */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		18457C52292E026100C34991 /* FriendDynamics */ = {
+			isa = PBXGroup;
+			children = (
+				18457C53292E026100C34991 /* TIMFriendDynamicsViewController.m */,
+				18457C54292E026100C34991 /* TIMFriendDynamicsViewController.h */,
+			);
+			path = FriendDynamics;
+			sourceTree = "<group>";
+		};
+		18457C55292E026100C34991 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */,
+				18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */,
+				18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */,
+				18457C59292E026100C34991 /* TUIDemo.bundle */,
+				18457C5A292E026100C34991 /* TUIDemoTheme.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		18457C5B292E026100C34991 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				18457C5C292E026100C34991 /* TIMLoginViewController.m */,
+				18457C5D292E026100C34991 /* TIMLoginViewController.h */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		41A0FF210E87F34F46CD2CCA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +286,13 @@
 				5EBEFEB10143A18532EDDAEE /* Pods-YCIMModule_Tests.debug.xcconfig */,
 				996C753C824EB05855EDDFC5 /* Pods-YCIMModule_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				18457C73292E044800C34991 /* YCIMModule_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for YCIMModule */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -144,11 +327,15 @@
 		6003F593195388D20070C39A /* Example for YCIMModule */ = {
 			isa = PBXGroup;
 			children = (
+				18457C2C292E026000C34991 /* Demo */,
+				18457C35292E026000C34991 /* Contact */,
+				18457C38292E026100C34991 /* Core */,
+				18457C4B292E026100C34991 /* Message */,
+				18457C52292E026100C34991 /* FriendDynamics */,
+				18457C55292E026100C34991 /* Resource */,
+				18457C5B292E026100C34991 /* Login */,
 				6003F59C195388D20070C39A /* YIMAppDelegate.h */,
 				6003F59D195388D20070C39A /* YIMAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* YIMViewController.h */,
-				6003F5A6195388D20070C39A /* YIMViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -209,6 +396,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				DA93FB6698DC8420498A612C /* [CP] Embed Pods Frameworks */,
+				BF664303C042649B3F6C60C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +436,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = linshaolong5240;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M7JHU9MQ3L;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +449,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,8 +469,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				18457C6F292E026100C34991 /* TUICoreCustomTheme.bundle in Resources */,
+				18457C70292E026100C34991 /* TUIDemo.bundle in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				18457C6D292E026100C34991 /* TUIChatCustomTheme.bundle in Resources */,
+				18457C6E292E026100C34991 /* TUIConversationCustomTheme.bundle in Resources */,
+				18457C71292E026100C34991 /* TUIDemoTheme.bundle in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -339,6 +535,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BF664303C042649B3F6C60C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YCIMModule_Example/Pods-YCIMModule_Example-resources.sh",
+				"${PODS_ROOT}/TUIChat/TUIChat/Resources/TUIChat.bundle",
+				"${PODS_ROOT}/TUIChat/TUIChat/Resources/TUIChatFace.bundle",
+				"${PODS_ROOT}/TUIChat/TUIChat/Resources/TUIChatTheme.bundle",
+				"${PODS_ROOT}/TUIContact/TUIContact/Resources/TUIContact.bundle",
+				"${PODS_ROOT}/TUIContact/TUIContact/Resources/TUIContactTheme.bundle",
+				"${PODS_ROOT}/TUIConversation/TUIConversation/Resources/TUIConversation.bundle",
+				"${PODS_ROOT}/TUIConversation/TUIConversation/Resources/TUIConversationTheme.bundle",
+				"${PODS_ROOT}/TUICore/TUICore/Resources/TUICore.bundle",
+				"${PODS_ROOT}/TUICore/TUICore/Resources/TUICoreTheme.bundle",
+				"${PODS_ROOT}/TUICore/TUICore/Resources/TUIKitLocalizable.bundle",
+				"${PODS_ROOT}/TUIGroup/TUIGroup/Resources/TUIGroup.bundle",
+				"${PODS_ROOT}/TUIGroup/TUIGroup/Resources/TUIGroupTheme.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIChat.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIChatFace.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIChatTheme.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIContact.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIContactTheme.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIConversation.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIConversationTheme.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUICore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUICoreTheme.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIKitLocalizable.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIGroup.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIGroupTheme.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YCIMModule_Example/Pods-YCIMModule_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DA93FB6698DC8420498A612C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,11 +582,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YCIMModule_Example/Pods-YCIMModule_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YCIMModule/YCIMModule.framework",
+				"${PODS_ROOT}/TXIMSDK_Plus_iOS/ImSDK_Plus.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YCIMModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImSDK_Plus.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,9 +600,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18457C65292E026100C34991 /* UIButton+TIM.m in Sources */,
+				18457C69292E026100C34991 /* TIMConversationListController.m in Sources */,
+				18457C63292E026100C34991 /* TIMPopCell.m in Sources */,
+				18457C6B292E026100C34991 /* TIMMessageViewController.m in Sources */,
+				18457C68292E026100C34991 /* TIMBaseViewController.m in Sources */,
+				18457C72292E026100C34991 /* TIMLoginViewController.m in Sources */,
+				18457C62292E026100C34991 /* TIMPopView.m in Sources */,
+				18457C61292E026100C34991 /* TIMContactViewController.m in Sources */,
+				18457C60292E026100C34991 /* TIMTabbarController.m in Sources */,
+				18457C6A292E026100C34991 /* TIMFoldListViewController.m in Sources */,
+				18457C5E292E026100C34991 /* TIMHomeViewController.m in Sources */,
 				6003F59E195388D20070C39A /* YIMAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* YIMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				18457C64292E026100C34991 /* TIMManager.m in Sources */,
+				18457C67292E026100C34991 /* TIMNavigationController.m in Sources */,
+				18457C6C292E026100C34991 /* TIMFriendDynamicsViewController.m in Sources */,
+				18457C66292E026100C34991 /* TIMImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,11 +744,20 @@
 			baseConfigurationReference = 372E9D467C0B246A9C31135D /* Pods-YCIMModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YCIMModule_Example.entitlements;
+				DEVELOPMENT_TEAM = M7JHU9MQ3L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YCIMModule/YCIMModule-Prefix.pch";
 				INFOPLIST_FILE = "YCIMModule/YCIMModule-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiche.onecar.onestore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -510,11 +769,20 @@
 			baseConfigurationReference = C4A281E2E4EE70BFE30A5C68 /* Pods-YCIMModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YCIMModule_Example.entitlements;
+				DEVELOPMENT_TEAM = M7JHU9MQ3L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YCIMModule/YCIMModule-Prefix.pch";
 				INFOPLIST_FILE = "YCIMModule/YCIMModule-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiche.onecar.onestore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
