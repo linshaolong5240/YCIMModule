@@ -69,16 +69,18 @@
     if (indexPath.row == 0) {
         TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TUIConversationCell class]) forIndexPath:indexPath];
         TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
-        data.title = @"title";
-        data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"🍎subTitle attributedString"];
+        data.title = @"服务提醒";
+        data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"新版本发布2021-01-05"];
         data.avatarImage = [YIMImage imageNamed:@"icon_serviece_notification"];
+        data.unreadCount = 1;
+        data.time = [NSDate date];
         [cell fillWithData:data];
         return cell;
     } else {
         TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TUIConversationCell class]) forIndexPath:indexPath];
         TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
-        data.title = @"title";
-        data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"🍎subTitle attributedString"];
+        data.title = @"已服务商家";
+        data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"已服务过的商家"];
         data.avatarImage = [YIMImage imageNamed:@"avatar_service_store"];
         [cell fillWithData:data];
         return cell;
