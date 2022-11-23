@@ -10,7 +10,27 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol TIMConversationListControllerListener <NSObject>
+typedef NS_ENUM(NSUInteger, YIMConversationListSectionType) {
+    YIMConversationListSectionTypeCustom,
+    YIMConversationListSectionTypeDefault,
+};
+
+NSArray<NSNumber *> *YIMConversationListSectionTypeAllCases(void);
+
+@protocol YIMConversationListControllerCustomDelegate <NSObject>
+
+@required
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInCustomSection:(NSInteger)section;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForCustomAtIndexPath:(NSIndexPath *)indexPath;
+
+@optional
+
+- (void)tableView:(UITableView *)tableView didSelectCustomAtIndexPath:(NSIndexPath *)indexPath;
+
+@end
+
+@protocol YIMConversationListControllerListener <NSObject>
 @optional
 
 /**
@@ -63,7 +83,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, weak) id<TIMConversationListControllerListener> delegate;
+@property (nonatomic, weak) id<YIMConversationListControllerListener> delegate;
+
+@property (nonatomic, weak) id<YIMConversationListControllerCustomDelegate> customDataSource;
 
 @property (nonatomic, strong) TUIConversationListDataProvider *provider;
 

@@ -13,7 +13,7 @@
 + (UIImage *)bundleImage:(NSString *)imageName {
     static NSBundle *resourceBundle = nil;
     if (resourceBundle == nil) {
-        NSString *bundlePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"OneMapKit" ofType:@"bundle"];
+        NSString *bundlePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"YCIMModule" ofType:@"bundle"];
         resourceBundle = [NSBundle bundleWithPath:bundlePath];
     }
     return [UIImage imageNamed:imageName inBundle:resourceBundle compatibleWithTraitCollection:nil];

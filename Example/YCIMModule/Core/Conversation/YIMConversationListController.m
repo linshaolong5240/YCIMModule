@@ -12,15 +12,12 @@
 #import "TUIDefine.h"
 #import "TUIThemeManager.h"
 #import "TUIConversationListDataProvider.h"
-#import "YIMImage.h"
 
-typedef NS_ENUM(NSUInteger, TIMConversationListSectionType) {
-    TIMConversationListSectionTypeService,
-    TIMConversationListSectionTypeChat,
-    TIMConversationListSectionTypeNumber,
-};
-
-static NSString *kConversationCell_ReuseId = @"TConversationCell";
+NSArray<NSNumber *> *YIMConversationListSectionTypeAllCases(void) {
+    return @[@(YIMConversationListSectionTypeCustom),
+             @(YIMConversationListSectionTypeDefault),
+    ];
+}
 
 @interface YIMConversationListController () <UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate, TUINotificationProtocol, TUIConversationListDataProviderDelegate>
 
@@ -65,7 +62,7 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
     _tableView.tableFooterView = [[UIView alloc] init];
     _tableView.backgroundColor = self.view.backgroundColor;
     _tableView.contentInset = UIEdgeInsetsMake(0, 0, 8, 0);
-    [_tableView registerClass:[TUIConversationCell class] forCellReuseIdentifier:kConversationCell_ReuseId];
+    [_tableView registerClass:[TUIConversationCell class] forCellReuseIdentifier:NSStringFromClass([TUIConversationCell class])];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.estimatedRowHeight = TConversationCell_Height;
@@ -108,7 +105,7 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
         });
         return;
     }
-    indexPaths = [self changeIndexPathsSectioncTo:TIMConversationListSectionTypeChat from:indexPaths];
+    indexPaths = [self changeIndexPathsSectioncTo:YIMConversationListSectionTypeDefault from:indexPaths];
     [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
 }
 
@@ -123,7 +120,7 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
     if (self.tableView.isEditing) {
         self.tableView.editing = NO;
     }
-    indexPaths = [self changeIndexPathsSectioncTo:TIMConversationListSectionTypeChat from:indexPaths];
+    indexPaths = [self changeIndexPathsSectioncTo:YIMConversationListSectionTypeDefault from:indexPaths];
     [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
 }
 
@@ -135,7 +132,7 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
         });
         return;
     }
-    indexPaths = [self changeIndexPathsSectioncTo:TIMConversationListSectionTypeChat from:indexPaths];
+    indexPaths = [self changeIndexPathsSectioncTo:YIMConversationListSectionTypeDefault from:indexPaths];
     [self.tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
 }
 
@@ -152,56 +149,53 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
 
 - (NSArray<NSIndexPath *> *)changeIndexPathsSectioncTo:(NSInteger)section from:(NSArray<NSIndexPath *> *)indexPaths {
     return [[indexPaths.rac_sequence map:^id _Nullable(NSIndexPath *  _Nullable value) {
-        return [NSIndexPath indexPathForRow:value.row inSection:TIMConversationListSectionTypeChat];
+        return [NSIndexPath indexPathForRow:value.row inSection:YIMConversationListSectionTypeDefault];
     }] array];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return TIMConversationListSectionTypeNumber;
+    return YIMConversationListSectionTypeAllCases().count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    TIMConversationListSectionType type = section;
+    YIMConversationListSectionType type = section;
     switch (type) {
-        case TIMConversationListSectionTypeService:
-            return 2;
+        case YIMConversationListSectionTypeCustom:
+            if (self.customDataSource) {
+                return [self.customDataSource tableView:tableView numberOfRowsInCustomSection:section];
+            }
+            return 0;
             break;
-        case TIMConversationListSectionTypeChat:
+        case YIMConversationListSectionTypeDefault:
             if (self.dataSourceChanged) {
                 self.dataSourceChanged(self.provider.conversationList.count);
             }
             return self.provider.conversationList.count;
             break;
-        case TIMConversationListSectionTypeNumber:
-            return 0;
-            break;
     }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    TIMConversationListSectionType type = indexPath.section;
+    YIMConversationListSectionType type = indexPath.section;
     switch (type) {
-        case TIMConversationListSectionTypeService:
+        case YIMConversationListSectionTypeCustom:
             return NO;
             break;
-        case TIMConversationListSectionTypeChat:
+        case YIMConversationListSectionTypeDefault:
             return YES;
-            break;
-        case TIMConversationListSectionTypeNumber:
-            return NO;
             break;
     }
 }
 
 - (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
-    TIMConversationListSectionType type = indexPath.section;
+    YIMConversationListSectionType type = indexPath.section;
     switch (type) {
-        case TIMConversationListSectionTypeService:
+        case YIMConversationListSectionTypeCustom:
             return @[];
             break;
-        case TIMConversationListSectionTypeChat:
+        case YIMConversationListSectionTypeDefault:
         {
             NSMutableArray *rowActions = [NSMutableArray array];
             TUIConversationCellData *cellData = self.provider.conversationList[indexPath.row];
@@ -271,20 +265,17 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
 
         }
             break;
-        case TIMConversationListSectionTypeNumber:
-            return @[];
-            break;
     }
 }
 
 // available ios 11 +
 - (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath API_AVAILABLE(ios(11.0)) {
-    TIMConversationListSectionType type = indexPath.section;
+    YIMConversationListSectionType type = indexPath.section;
     switch (type) {
-        case TIMConversationListSectionTypeService:
+        case YIMConversationListSectionTypeCustom:
             return nil;
             break;
-        case TIMConversationListSectionTypeChat:
+        case YIMConversationListSectionTypeDefault:
         {
             __weak typeof(self) weakSelf = self;
             TUIConversationCellData *cellData = self.provider.conversationList[indexPath.row];
@@ -359,9 +350,6 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
             return configuration;
         }
             break;
-        case TIMConversationListSectionTypeNumber:
-            return nil;
-            break;
     }
 }
 
@@ -370,49 +358,36 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    TIMConversationListSectionType type = indexPath.section;
+    YIMConversationListSectionType type = indexPath.section;
     switch (type) {
-        case TIMConversationListSectionTypeService:
-        {
-            if (indexPath.row == 0) {
-                TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:kConversationCell_ReuseId forIndexPath:indexPath];
-                TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
-                data.title = @"title";
-                data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"🍎subTitle attributedString"];
-                data.avatarImage = [YIMImage imageNamed:@"icon_serviece_notification"];
-                [cell fillWithData:data];
-                return cell;
-            } else {
-                TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:kConversationCell_ReuseId forIndexPath:indexPath];
-                TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
-                data.title = @"title";
-                data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"🍎subTitle attributedString"];
-                data.avatarImage = [YIMImage imageNamed:@"avatar_service_store"];
-                [cell fillWithData:data];
-                return cell;
+        case YIMConversationListSectionTypeCustom:
+            if (self.customDataSource) {
+                return [self.customDataSource tableView:tableView cellForCustomAtIndexPath:indexPath];
             }
-        }
+            return nil;
             break;
-        case TIMConversationListSectionTypeChat:
+        case YIMConversationListSectionTypeDefault:
         {
-            TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:kConversationCell_ReuseId forIndexPath:indexPath];
+            TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TUIConversationCell class]) forIndexPath:indexPath];
             TUIConversationCellData *data = [self.provider.conversationList objectAtIndex:indexPath.row];
             [cell fillWithData:data];
             return cell;
         }
             break;
-        case TIMConversationListSectionTypeNumber:
-            return [[UITableViewCell alloc] init];
-            break;
     }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    TIMConversationListSectionType type = indexPath.section;
+    YIMConversationListSectionType type = indexPath.section;
     switch (type) {
-        case TIMConversationListSectionTypeService:
+        case YIMConversationListSectionTypeCustom:
+        {
+            if (self.delegate && [self.customDataSource respondsToSelector:@selector(tableView:didSelectCustomAtIndexPath:)]) {
+                [self.customDataSource tableView:tableView didSelectCustomAtIndexPath:indexPath];
+            }
+        }
             break;
-        case TIMConversationListSectionTypeChat:
+        case YIMConversationListSectionTypeDefault:
         {
             TUIConversationCellData *data = [self.provider.conversationList objectAtIndex:indexPath.row];
             if (self.delegate && [self.delegate respondsToSelector:@selector(conversationListController:didSelectConversation:)]) {
@@ -420,18 +395,15 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
             }
         }
             break;
-        case TIMConversationListSectionTypeNumber:
-            break;
     }
-
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    TIMConversationListSectionType type = indexPath.section;
+    YIMConversationListSectionType type = indexPath.section;
     switch (type) {
-        case TIMConversationListSectionTypeService:
+        case YIMConversationListSectionTypeCustom:
             break;
-        case TIMConversationListSectionTypeChat:
+        case YIMConversationListSectionTypeDefault:
         {
             //通过开启或关闭这个开关，控制最后一行分割线的长度
             //Turn on or off the length of the last line of dividers by controlling this switch
@@ -453,8 +425,6 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
                 [cell setLayoutMargins:UIEdgeInsetsZero];
             }
         }
-            break;
-        case TIMConversationListSectionTypeNumber:
             break;
     }
 }

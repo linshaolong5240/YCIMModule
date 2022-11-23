@@ -13,8 +13,9 @@
 #import <TUIGroupChatViewController.h>
 #import "YIMFoldListViewController.h"
 #import "YIMConversationListController.h"
+#import "YIMImage.h"
 
-@interface YIMMessageViewController () <TIMConversationListControllerListener>
+@interface YIMMessageViewController () <YIMConversationListControllerCustomDelegate , YIMConversationListControllerListener>
 
 @end
 
@@ -27,6 +28,7 @@
     YIMConversationListController *conversationController = [[YIMConversationListController alloc] init];
     conversationController.isEnableSearch = NO;
     conversationController.delegate = self;
+    conversationController.customDataSource = self;
     
     [self addChildViewController:conversationController];
     [self.view addSubview:conversationController.view];
@@ -56,6 +58,37 @@
     model.draftText = data.draftText;
     model.atMsgSeqs = data.atMsgSeqs;
     return model;
+}
+
+#pragma mark - YIMConversationListControllerCustomDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInCustomSection:(NSInteger)section {
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForCustomAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TUIConversationCell class]) forIndexPath:indexPath];
+        TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
+        data.title = @"title";
+        data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"🍎subTitle attributedString"];
+        data.avatarImage = [YIMImage imageNamed:@"icon_serviece_notification"];
+        [cell fillWithData:data];
+        return cell;
+    } else {
+        TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TUIConversationCell class]) forIndexPath:indexPath];
+        TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
+        data.title = @"title";
+        data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"🍎subTitle attributedString"];
+        data.avatarImage = [YIMImage imageNamed:@"avatar_service_store"];
+        [cell fillWithData:data];
+        return cell;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectCustomAtIndexPath:(NSIndexPath *)indexPath {
+#if DEBUG
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+#endif
 }
 
 #pragma mark - TUIConversationListControllerListener
