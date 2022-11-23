@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18457C5E292E026100C34991 /* TIMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C2F292E026000C34991 /* TIMHomeViewController.m */; };
-		18457C60292E026100C34991 /* TIMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C34292E026000C34991 /* TIMTabbarController.m */; };
-		18457C61292E026100C34991 /* TIMContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C36292E026000C34991 /* TIMContactViewController.m */; };
-		18457C62292E026100C34991 /* TIMPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3A292E026100C34991 /* TIMPopView.m */; };
+		18457C5E292E026100C34991 /* YIMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C2F292E026000C34991 /* YIMHomeViewController.m */; };
+		18457C60292E026100C34991 /* YIMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C34292E026000C34991 /* YIMTabbarController.m */; };
+		18457C61292E026100C34991 /* YIMContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C36292E026000C34991 /* YIMContactViewController.m */; };
+		18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3A292E026100C34991 /* YIMPopMenuView.m */; };
 		18457C63292E026100C34991 /* TIMPopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3B292E026100C34991 /* TIMPopCell.m */; };
-		18457C64292E026100C34991 /* TIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C40292E026100C34991 /* TIMManager.m */; };
-		18457C65292E026100C34991 /* UIButton+TIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C43292E026100C34991 /* UIButton+TIM.m */; };
-		18457C66292E026100C34991 /* TIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C45292E026100C34991 /* TIMImage.m */; };
+		18457C64292E026100C34991 /* YIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C40292E026100C34991 /* YIMManager.m */; };
+		18457C65292E026100C34991 /* UIButton+YIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C43292E026100C34991 /* UIButton+YIM.m */; };
+		18457C66292E026100C34991 /* YIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C45292E026100C34991 /* YIMImage.m */; };
 		18457C67292E026100C34991 /* TIMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C49292E026100C34991 /* TIMNavigationController.m */; };
-		18457C68292E026100C34991 /* TIMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* TIMBaseViewController.m */; };
-		18457C69292E026100C34991 /* TIMConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4C292E026100C34991 /* TIMConversationListController.m */; };
-		18457C6A292E026100C34991 /* TIMFoldListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4D292E026100C34991 /* TIMFoldListViewController.m */; };
-		18457C6B292E026100C34991 /* TIMMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4E292E026100C34991 /* TIMMessageViewController.m */; };
-		18457C6C292E026100C34991 /* TIMFriendDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C53292E026100C34991 /* TIMFriendDynamicsViewController.m */; };
+		18457C68292E026100C34991 /* YIMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* YIMBaseViewController.m */; };
+		18457C69292E026100C34991 /* YIMConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4C292E026100C34991 /* YIMConversationListController.m */; };
+		18457C6A292E026100C34991 /* YIMFoldListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4D292E026100C34991 /* YIMFoldListViewController.m */; };
+		18457C6B292E026100C34991 /* YIMMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4E292E026100C34991 /* YIMMessageViewController.m */; };
+		18457C6C292E026100C34991 /* YIMFriendDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C53292E026100C34991 /* YIMFriendDynamicsViewController.m */; };
 		18457C6D292E026100C34991 /* TUIChatCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */; };
 		18457C6E292E026100C34991 /* TUIConversationCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */; };
 		18457C6F292E026100C34991 /* TUICoreCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */; };
@@ -57,34 +57,34 @@
 /* Begin PBXFileReference section */
 		0BEF27B23A0B4CA0340E2398 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		11DF042EB01A993A9333AD2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		18457C2E292E026000C34991 /* TIMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMHomeViewController.h; sourceTree = "<group>"; };
-		18457C2F292E026000C34991 /* TIMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMHomeViewController.m; sourceTree = "<group>"; };
-		18457C33292E026000C34991 /* TIMTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMTabbarController.h; sourceTree = "<group>"; };
-		18457C34292E026000C34991 /* TIMTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMTabbarController.m; sourceTree = "<group>"; };
-		18457C36292E026000C34991 /* TIMContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMContactViewController.m; sourceTree = "<group>"; };
-		18457C37292E026000C34991 /* TIMContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMContactViewController.h; sourceTree = "<group>"; };
-		18457C3A292E026100C34991 /* TIMPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMPopView.m; sourceTree = "<group>"; };
+		18457C2E292E026000C34991 /* YIMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMHomeViewController.h; sourceTree = "<group>"; };
+		18457C2F292E026000C34991 /* YIMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMHomeViewController.m; sourceTree = "<group>"; };
+		18457C33292E026000C34991 /* YIMTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMTabbarController.h; sourceTree = "<group>"; };
+		18457C34292E026000C34991 /* YIMTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMTabbarController.m; sourceTree = "<group>"; };
+		18457C36292E026000C34991 /* YIMContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMContactViewController.m; sourceTree = "<group>"; };
+		18457C37292E026000C34991 /* YIMContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMContactViewController.h; sourceTree = "<group>"; };
+		18457C3A292E026100C34991 /* YIMPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMPopMenuView.m; sourceTree = "<group>"; };
 		18457C3B292E026100C34991 /* TIMPopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMPopCell.m; sourceTree = "<group>"; };
-		18457C3C292E026100C34991 /* TIMPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMPopView.h; sourceTree = "<group>"; };
+		18457C3C292E026100C34991 /* YIMPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMPopMenuView.h; sourceTree = "<group>"; };
 		18457C3D292E026100C34991 /* TIMPopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMPopCell.h; sourceTree = "<group>"; };
-		18457C3F292E026100C34991 /* TIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMManager.h; sourceTree = "<group>"; };
-		18457C40292E026100C34991 /* TIMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMManager.m; sourceTree = "<group>"; };
-		18457C42292E026100C34991 /* UIButton+TIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TIM.h"; sourceTree = "<group>"; };
-		18457C43292E026100C34991 /* UIButton+TIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TIM.m"; sourceTree = "<group>"; };
-		18457C44292E026100C34991 /* TIMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMImage.h; sourceTree = "<group>"; };
-		18457C45292E026100C34991 /* TIMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMImage.m; sourceTree = "<group>"; };
-		18457C47292E026100C34991 /* TIMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMBaseViewController.h; sourceTree = "<group>"; };
+		18457C3F292E026100C34991 /* YIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMManager.h; sourceTree = "<group>"; };
+		18457C40292E026100C34991 /* YIMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMManager.m; sourceTree = "<group>"; };
+		18457C42292E026100C34991 /* UIButton+YIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YIM.h"; sourceTree = "<group>"; };
+		18457C43292E026100C34991 /* UIButton+YIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YIM.m"; sourceTree = "<group>"; };
+		18457C44292E026100C34991 /* YIMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMImage.h; sourceTree = "<group>"; };
+		18457C45292E026100C34991 /* YIMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMImage.m; sourceTree = "<group>"; };
+		18457C47292E026100C34991 /* YIMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMBaseViewController.h; sourceTree = "<group>"; };
 		18457C48292E026100C34991 /* TIMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMNavigationController.h; sourceTree = "<group>"; };
 		18457C49292E026100C34991 /* TIMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMNavigationController.m; sourceTree = "<group>"; };
-		18457C4A292E026100C34991 /* TIMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMBaseViewController.m; sourceTree = "<group>"; };
-		18457C4C292E026100C34991 /* TIMConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMConversationListController.m; sourceTree = "<group>"; };
-		18457C4D292E026100C34991 /* TIMFoldListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMFoldListViewController.m; sourceTree = "<group>"; };
-		18457C4E292E026100C34991 /* TIMMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMMessageViewController.m; sourceTree = "<group>"; };
-		18457C4F292E026100C34991 /* TIMConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMConversationListController.h; sourceTree = "<group>"; };
-		18457C50292E026100C34991 /* TIMMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMMessageViewController.h; sourceTree = "<group>"; };
-		18457C51292E026100C34991 /* TIMFoldListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMFoldListViewController.h; sourceTree = "<group>"; };
-		18457C53292E026100C34991 /* TIMFriendDynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMFriendDynamicsViewController.m; sourceTree = "<group>"; };
-		18457C54292E026100C34991 /* TIMFriendDynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMFriendDynamicsViewController.h; sourceTree = "<group>"; };
+		18457C4A292E026100C34991 /* YIMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMBaseViewController.m; sourceTree = "<group>"; };
+		18457C4C292E026100C34991 /* YIMConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMConversationListController.m; sourceTree = "<group>"; };
+		18457C4D292E026100C34991 /* YIMFoldListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMFoldListViewController.m; sourceTree = "<group>"; };
+		18457C4E292E026100C34991 /* YIMMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMMessageViewController.m; sourceTree = "<group>"; };
+		18457C4F292E026100C34991 /* YIMConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMConversationListController.h; sourceTree = "<group>"; };
+		18457C50292E026100C34991 /* YIMMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMMessageViewController.h; sourceTree = "<group>"; };
+		18457C51292E026100C34991 /* YIMFoldListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMFoldListViewController.h; sourceTree = "<group>"; };
+		18457C53292E026100C34991 /* YIMFriendDynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMFriendDynamicsViewController.m; sourceTree = "<group>"; };
+		18457C54292E026100C34991 /* YIMFriendDynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMFriendDynamicsViewController.h; sourceTree = "<group>"; };
 		18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIChatCustomTheme.bundle; sourceTree = "<group>"; };
 		18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIConversationCustomTheme.bundle; sourceTree = "<group>"; };
 		18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUICoreCustomTheme.bundle; sourceTree = "<group>"; };
@@ -149,7 +149,11 @@
 		18457C2C292E026000C34991 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				18457C35292E026000C34991 /* Contact */,
+				18457C52292E026100C34991 /* FriendDynamics */,
 				18457C2D292E026000C34991 /* HOME */,
+				18457C5B292E026100C34991 /* Login */,
+				18457C4B292E026100C34991 /* Message */,
 				18457C32292E026000C34991 /* Navigation */,
 			);
 			path = Demo;
@@ -158,8 +162,8 @@
 		18457C2D292E026000C34991 /* HOME */ = {
 			isa = PBXGroup;
 			children = (
-				18457C2E292E026000C34991 /* TIMHomeViewController.h */,
-				18457C2F292E026000C34991 /* TIMHomeViewController.m */,
+				18457C2E292E026000C34991 /* YIMHomeViewController.h */,
+				18457C2F292E026000C34991 /* YIMHomeViewController.m */,
 			);
 			path = HOME;
 			sourceTree = "<group>";
@@ -167,8 +171,8 @@
 		18457C32292E026000C34991 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				18457C33292E026000C34991 /* TIMTabbarController.h */,
-				18457C34292E026000C34991 /* TIMTabbarController.m */,
+				18457C33292E026000C34991 /* YIMTabbarController.h */,
+				18457C34292E026000C34991 /* YIMTabbarController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -176,8 +180,8 @@
 		18457C35292E026000C34991 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				18457C36292E026000C34991 /* TIMContactViewController.m */,
-				18457C37292E026000C34991 /* TIMContactViewController.h */,
+				18457C37292E026000C34991 /* YIMContactViewController.h */,
+				18457C36292E026000C34991 /* YIMContactViewController.m */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -185,11 +189,12 @@
 		18457C38292E026100C34991 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				18457C74292E075600C34991 /* Conversation */,
 				18457C39292E026100C34991 /* Pop */,
 				18457C3E292E026100C34991 /* TIMManager */,
 				18457C41292E026100C34991 /* Extension */,
-				18457C44292E026100C34991 /* TIMImage.h */,
-				18457C45292E026100C34991 /* TIMImage.m */,
+				18457C44292E026100C34991 /* YIMImage.h */,
+				18457C45292E026100C34991 /* YIMImage.m */,
 				18457C46292E026100C34991 /* Base */,
 			);
 			path = Core;
@@ -198,10 +203,10 @@
 		18457C39292E026100C34991 /* Pop */ = {
 			isa = PBXGroup;
 			children = (
-				18457C3A292E026100C34991 /* TIMPopView.m */,
-				18457C3B292E026100C34991 /* TIMPopCell.m */,
-				18457C3C292E026100C34991 /* TIMPopView.h */,
 				18457C3D292E026100C34991 /* TIMPopCell.h */,
+				18457C3B292E026100C34991 /* TIMPopCell.m */,
+				18457C3C292E026100C34991 /* YIMPopMenuView.h */,
+				18457C3A292E026100C34991 /* YIMPopMenuView.m */,
 			);
 			path = Pop;
 			sourceTree = "<group>";
@@ -209,8 +214,8 @@
 		18457C3E292E026100C34991 /* TIMManager */ = {
 			isa = PBXGroup;
 			children = (
-				18457C3F292E026100C34991 /* TIMManager.h */,
-				18457C40292E026100C34991 /* TIMManager.m */,
+				18457C3F292E026100C34991 /* YIMManager.h */,
+				18457C40292E026100C34991 /* YIMManager.m */,
 			);
 			path = TIMManager;
 			sourceTree = "<group>";
@@ -218,8 +223,8 @@
 		18457C41292E026100C34991 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				18457C42292E026100C34991 /* UIButton+TIM.h */,
-				18457C43292E026100C34991 /* UIButton+TIM.m */,
+				18457C42292E026100C34991 /* UIButton+YIM.h */,
+				18457C43292E026100C34991 /* UIButton+YIM.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -227,10 +232,10 @@
 		18457C46292E026100C34991 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				18457C47292E026100C34991 /* TIMBaseViewController.h */,
+				18457C47292E026100C34991 /* YIMBaseViewController.h */,
 				18457C48292E026100C34991 /* TIMNavigationController.h */,
 				18457C49292E026100C34991 /* TIMNavigationController.m */,
-				18457C4A292E026100C34991 /* TIMBaseViewController.m */,
+				18457C4A292E026100C34991 /* YIMBaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -238,12 +243,10 @@
 		18457C4B292E026100C34991 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				18457C4C292E026100C34991 /* TIMConversationListController.m */,
-				18457C4D292E026100C34991 /* TIMFoldListViewController.m */,
-				18457C4E292E026100C34991 /* TIMMessageViewController.m */,
-				18457C4F292E026100C34991 /* TIMConversationListController.h */,
-				18457C50292E026100C34991 /* TIMMessageViewController.h */,
-				18457C51292E026100C34991 /* TIMFoldListViewController.h */,
+				18457C51292E026100C34991 /* YIMFoldListViewController.h */,
+				18457C4D292E026100C34991 /* YIMFoldListViewController.m */,
+				18457C50292E026100C34991 /* YIMMessageViewController.h */,
+				18457C4E292E026100C34991 /* YIMMessageViewController.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -251,8 +254,8 @@
 		18457C52292E026100C34991 /* FriendDynamics */ = {
 			isa = PBXGroup;
 			children = (
-				18457C53292E026100C34991 /* TIMFriendDynamicsViewController.m */,
-				18457C54292E026100C34991 /* TIMFriendDynamicsViewController.h */,
+				18457C54292E026100C34991 /* YIMFriendDynamicsViewController.h */,
+				18457C53292E026100C34991 /* YIMFriendDynamicsViewController.m */,
 			);
 			path = FriendDynamics;
 			sourceTree = "<group>";
@@ -276,6 +279,15 @@
 				18457C5D292E026100C34991 /* TIMLoginViewController.h */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		18457C74292E075600C34991 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				18457C4F292E026100C34991 /* YIMConversationListController.h */,
+				18457C4C292E026100C34991 /* YIMConversationListController.m */,
+			);
+			path = Conversation;
 			sourceTree = "<group>";
 		};
 		41A0FF210E87F34F46CD2CCA /* Pods */ = {
@@ -328,12 +340,8 @@
 			isa = PBXGroup;
 			children = (
 				18457C2C292E026000C34991 /* Demo */,
-				18457C35292E026000C34991 /* Contact */,
 				18457C38292E026100C34991 /* Core */,
-				18457C4B292E026100C34991 /* Message */,
-				18457C52292E026100C34991 /* FriendDynamics */,
 				18457C55292E026100C34991 /* Resource */,
-				18457C5B292E026100C34991 /* Login */,
 				6003F59C195388D20070C39A /* YIMAppDelegate.h */,
 				6003F59D195388D20070C39A /* YIMAppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -434,7 +442,7 @@
 			attributes = {
 				CLASSPREFIX = YIM;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = linshaolong5240;
+				ORGANIZATIONNAME = YRYC;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = M7JHU9MQ3L;
@@ -600,23 +608,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18457C65292E026100C34991 /* UIButton+TIM.m in Sources */,
-				18457C69292E026100C34991 /* TIMConversationListController.m in Sources */,
+				18457C65292E026100C34991 /* UIButton+YIM.m in Sources */,
+				18457C69292E026100C34991 /* YIMConversationListController.m in Sources */,
 				18457C63292E026100C34991 /* TIMPopCell.m in Sources */,
-				18457C6B292E026100C34991 /* TIMMessageViewController.m in Sources */,
-				18457C68292E026100C34991 /* TIMBaseViewController.m in Sources */,
+				18457C6B292E026100C34991 /* YIMMessageViewController.m in Sources */,
+				18457C68292E026100C34991 /* YIMBaseViewController.m in Sources */,
 				18457C72292E026100C34991 /* TIMLoginViewController.m in Sources */,
-				18457C62292E026100C34991 /* TIMPopView.m in Sources */,
-				18457C61292E026100C34991 /* TIMContactViewController.m in Sources */,
-				18457C60292E026100C34991 /* TIMTabbarController.m in Sources */,
-				18457C6A292E026100C34991 /* TIMFoldListViewController.m in Sources */,
-				18457C5E292E026100C34991 /* TIMHomeViewController.m in Sources */,
+				18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */,
+				18457C61292E026100C34991 /* YIMContactViewController.m in Sources */,
+				18457C60292E026100C34991 /* YIMTabbarController.m in Sources */,
+				18457C6A292E026100C34991 /* YIMFoldListViewController.m in Sources */,
+				18457C5E292E026100C34991 /* YIMHomeViewController.m in Sources */,
 				6003F59E195388D20070C39A /* YIMAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				18457C64292E026100C34991 /* TIMManager.m in Sources */,
+				18457C64292E026100C34991 /* YIMManager.m in Sources */,
 				18457C67292E026100C34991 /* TIMNavigationController.m in Sources */,
-				18457C6C292E026100C34991 /* TIMFriendDynamicsViewController.m in Sources */,
-				18457C66292E026100C34991 /* TIMImage.m in Sources */,
+				18457C6C292E026100C34991 /* YIMFriendDynamicsViewController.m in Sources */,
+				18457C66292E026100C34991 /* YIMImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

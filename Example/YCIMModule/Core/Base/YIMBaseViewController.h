@@ -1,6 +1,6 @@
 //
-//  TIMBaseViewController.h
-//  TencentIMDemo
+//  YIMBaseViewController.h
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TIMBaseViewController : UIViewController <JXCategoryListContentViewDelegate>
+@interface YIMBaseViewController : UIViewController <JXCategoryListContentViewDelegate>
 
 - (void)showAlertWithTitle:(nullable NSString *)title message:(nullable NSString *)message;
 

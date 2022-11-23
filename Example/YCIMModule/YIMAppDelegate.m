@@ -2,21 +2,21 @@
 //  YIMAppDelegate.m
 //  YCIMModule
 //
-//  Created by linshaolong5240 on 11/23/2022.
-//  Copyright (c) 2022 linshaolong5240. All rights reserved.
+//  Created by Sauron on 11/23/2022.
+//  Copyright (c) 2022 YRYC. All rights reserved.
 //
 
 #import "YIMAppDelegate.h"
 #import <UserNotifications/UserNotifications.h>
-#import "TIMManager.h"
+#import "YIMManager.h"
 #import "TIMLoginViewController.h"
 #import <TUIDefine.h>
 #import <TUIThemeManager.h>
 #import <TUIOfflinePushManager+Advance.h>
 
-#import "TIMTabbarController.h"
+#import "YIMTabbarController.h"
 
-@interface YIMAppDelegate () <TIMManagerListenr>
+@interface YIMAppDelegate () <YIMManagerListenr>
 
 @end
 
@@ -48,13 +48,13 @@ TUIOfflinePushCertificateIDForAPNS(36102)
     TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUIDemoTheme.bundle" ofType:nil], TUIThemeModuleDemo);
     [TUIThemeManager.shareManager applyTheme:@"tim" forModule:TUIThemeModuleDemo];
 
-    [TIMManager.sharedInstance addListener:self];
-    [[TIMManager sharedInstance] initSDKWithAppId:1400759961];
-    [TIMManager.sharedInstance tryAutoLogin];
+    [YIMManager.sharedInstance addListener:self];
+    [[YIMManager sharedInstance] initSDKWithAppId:1400759961];
+    [YIMManager.sharedInstance tryAutoLogin];
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     self.window.backgroundColor = UIColor.whiteColor;
-    UIViewController *rootViewController = [TIMTabbarController new];
+    UIViewController *rootViewController = [YIMTabbarController new];
     self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -77,16 +77,16 @@ TUIOfflinePushCertificateIDForAPNS(36102)
 - (void)timOnUserSigExpired { }
 - (void)timOnSelfInfoUpdated:(V2TIMUserFullInfo *)Info { }
 
-- (void)timManager:(TIMManager *)manager didLoginWithUserId:(NSString *)userId {
-    TIMTabbarController *tabBarController = (TIMTabbarController *)self.window.rootViewController;
+- (void)timManager:(YIMManager *)manager didLoginWithUserId:(NSString *)userId {
+    YIMTabbarController *tabBarController = (YIMTabbarController *)self.window.rootViewController;
     tabBarController.selectedViewController = tabBarController.viewControllers[1];
 }
 
-- (void)timManager:(TIMManager *)manager didLogoutWithUserId:(NSString *)userId {
+- (void)timManager:(YIMManager *)manager didLogoutWithUserId:(NSString *)userId {
     [TUIOfflinePushManager.shareManager unregisterService];
 }
 
-- (void)timManager:(TIMManager *)manager didLoginFailedWithCode:(int)code description:(NSString *)description {
+- (void)timManager:(YIMManager *)manager didLoginFailedWithCode:(int)code description:(NSString *)description {
 }
 
 @end

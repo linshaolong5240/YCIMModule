@@ -1,6 +1,6 @@
 //
-//  TIMTabbarController.h
-//  TencentIMDemo
+//  YIMTabbarController.h
+//  YCIMModule
 //
 //  Created by Saruon on 2022/11/22.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TIMTabbarController : UITabBarController
+@interface YIMTabbarController : UITabBarController
 
 @end
 

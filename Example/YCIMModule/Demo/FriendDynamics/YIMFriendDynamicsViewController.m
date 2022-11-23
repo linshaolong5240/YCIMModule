@@ -1,18 +1,18 @@
 //
-//  TIMFriendDynamicsViewController.m
-//  TencentIMDemo
+//  YIMFriendDynamicsViewController.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMFriendDynamicsViewController.h"
+#import "YIMFriendDynamicsViewController.h"
 
-@interface TIMFriendDynamicsViewController ()
+@interface YIMFriendDynamicsViewController ()
 
 @end
 
-@implementation TIMFriendDynamicsViewController
+@implementation YIMFriendDynamicsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

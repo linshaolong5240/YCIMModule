@@ -1,6 +1,6 @@
 //
 //  TIMPopCell.m
-//  TencentIMDemo
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/22.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -9,7 +9,7 @@
 #import "TIMPopCell.h"
 #import "TUIThemeManager.h"
 
-@implementation TIMPopCellData
+@implementation TIMPopMenuCellData
 @end
 
 @implementation TIMPopCell
@@ -51,7 +51,7 @@
     self.title.center = CGPointMake(self.title.center.x, self.contentView.center.y);
 }
 
-- (void)setData:(TIMPopCellData *)data
+- (void)setData:(TIMPopMenuCellData *)data
 {
     _image.image = data.image;
     _title.text = data.title;

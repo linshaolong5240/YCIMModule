@@ -1,12 +1,12 @@
 //
-//  TIMContactViewController.m
-//  TencentIMDemo
+//  YIMContactViewController.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMContactViewController.h"
+#import "YIMContactViewController.h"
 #import <TUIContactController.h>
 #import <TUIFriendProfileController.h>
 #import <TUINewFriendViewController.h>
@@ -14,16 +14,16 @@
 #import "TUIGroupConversationListController.h"
 #import "TUIGroupChatViewController.h"
 
-#import "TIMManager.h"
+#import "YIMManager.h"
 
-@interface TIMContactViewController () <TUIContactControllerListener>
+@interface YIMContactViewController () <TUIContactControllerListener>
 
 @property (nonatomic, strong) TUINaviBarIndicatorView *titleView;
 @property (nonatomic, strong) TUIContactController *contactVC;
 
 @end
 
-@implementation TIMContactViewController
+@implementation YIMContactViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

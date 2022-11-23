@@ -1,16 +1,16 @@
 //
-//  UIButton+TIM.m
-//  TencentIMDemo
+//  UIButton+YIM.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/21.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "UIButton+TIM.h"
+#import "UIButton+YIM.h"
 
-@implementation UIButton (TIM)
+@implementation UIButton (YIM)
 
-- (void)tim_alignVerticalImageTextWithSpacing:(CGFloat)spacing {
+- (void)yim_alignVerticalImageTextWithSpacing:(CGFloat)spacing {
     if (!self.imageView) {
         return;
     }
@@ -29,8 +29,8 @@
     self.titleEdgeInsets = UIEdgeInsetsMake(spacing, -self.imageView.frame.size.width, -self.imageView.frame.size.height, 0);
 }
 
-- (void)tim_alignVerticalImageText {
-    [self tim_alignVerticalImageTextWithSpacing:6];
+- (void)yim_alignVerticalImageText {
+    [self yim_alignVerticalImageTextWithSpacing:6];
 }
 
 @end

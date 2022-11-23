@@ -1,6 +1,6 @@
 //
-//  TIMPopView.h
-//  TencentIMDemo
+//  YIMPopMenuView.h
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/22.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class TIMPopView;
+@class YIMPopMenuView;
 @protocol TIMPopViewDelegate <NSObject>
-- (void)popView:(TIMPopView *)popView didSelectRowAtIndex:(NSInteger)index;
+- (void)popView:(YIMPopMenuView *)popView didSelectRowAtIndex:(NSInteger)index;
 @end
 
-@interface TIMPopView : UIView
+@interface YIMPopMenuView : UIView
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) CGPoint arrowPoint;
 @property (nonatomic, weak) id<TIMPopViewDelegate> delegate;

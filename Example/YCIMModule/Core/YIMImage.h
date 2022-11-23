@@ -1,6 +1,6 @@
 //
-//  TIMImage.h
-//  TencentIMDemo
+//  YIMImage.h
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/23.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TIMImage : NSObject
+@interface YIMImage : NSObject
 
 + (UIImage *)imageNamed:(NSString *)name;
 

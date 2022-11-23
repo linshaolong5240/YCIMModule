@@ -1,12 +1,12 @@
 //
-//  TIMFoldListViewController.m
-//  TencentIMDemo
+//  YIMFoldListViewController.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMFoldListViewController.h"
+#import "YIMFoldListViewController.h"
 
 
 #import "TUIDefine.h"
@@ -21,7 +21,7 @@
 
 static NSString *kConversationCell_ReuseId = @"TConversationCell";
 
-@interface TIMFoldListViewController ()<TUINavigationControllerDelegate,TUIConversationListControllerListener>
+@interface YIMFoldListViewController ()<TUINavigationControllerDelegate,TUIConversationListControllerListener>
 
 @property (nonatomic, strong) TUINaviBarIndicatorView *titleView;
 @property (nonatomic, copy) NSString *mainTitle;
@@ -30,7 +30,7 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
 
 @end
 
-@implementation TIMFoldListViewController
+@implementation YIMFoldListViewController
 
 - (void)dealloc {
     

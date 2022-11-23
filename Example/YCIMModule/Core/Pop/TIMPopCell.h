@@ -1,6 +1,6 @@
 //
 //  TIMPopCell.h
-//  TencentIMDemo
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/22.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TIMPopCellData : NSObject
+@interface TIMPopMenuCellData : NSObject
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSString *title;
 @end
@@ -17,5 +17,5 @@
 @property (nonatomic, strong) UIImageView *image;
 @property (nonatomic, strong) UILabel *title;
 + (CGFloat)getHeight;
-- (void)setData:(TIMPopCellData *)data;
+- (void)setData:(TIMPopMenuCellData *)data;
 @end

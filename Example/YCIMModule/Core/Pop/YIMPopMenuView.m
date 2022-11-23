@@ -1,21 +1,21 @@
 //
-//  TIMPopView.m
-//  TencentIMDemo
+//  YIMPopMenuView.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/22.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMPopView.h"
+#import "YIMPopMenuView.h"
 #import "TIMPopCell.h"
 #import <TUIThemeManager.h>
 #import <UIColor+TUIHexColor.h>
 
-@interface TIMPopView ()<UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
+@interface YIMPopMenuView ()<UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 @property (nonatomic, strong) NSMutableArray *data;
 @end
 
-@implementation TIMPopView
+@implementation YIMPopMenuView
 
 - (id)initWithFrame:(CGRect)frame
 {

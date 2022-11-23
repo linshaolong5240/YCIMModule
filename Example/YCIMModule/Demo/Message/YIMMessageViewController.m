@@ -1,30 +1,30 @@
 //
-//  TIMMessageViewController.m
-//  TencentIMDemo
+//  YIMMessageViewController.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMMessageViewController.h"
+#import "YIMMessageViewController.h"
 #import <TUIConversation.h>
 #import <TUIChat.h>
 #import <TUIC2CChatViewController.h>
 #import <TUIGroupChatViewController.h>
-#import "TIMFoldListViewController.h"
-#import "TIMConversationListController.h"
+#import "YIMFoldListViewController.h"
+#import "YIMConversationListController.h"
 
-@interface TIMMessageViewController () <TIMConversationListControllerListener>
+@interface YIMMessageViewController () <TIMConversationListControllerListener>
 
 @end
 
-@implementation TIMMessageViewController
+@implementation YIMMessageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    TIMConversationListController *conversationController = [[TIMConversationListController alloc] init];
+    YIMConversationListController *conversationController = [[YIMConversationListController alloc] init];
     conversationController.isEnableSearch = NO;
     conversationController.delegate = self;
     
@@ -83,7 +83,7 @@
 
         [TUIConversationListDataProvider cacheConversationFoldListSettings_FoldItemIsUnread:NO];
         
-        TIMFoldListViewController *foldVC = [[TIMFoldListViewController alloc] init];
+        YIMFoldListViewController *foldVC = [[YIMFoldListViewController alloc] init];
         [self.navigationController pushViewController:foldVC animated:YES];
 
         foldVC.dismissCallback = ^(NSMutableAttributedString * _Nonnull foldStr, NSArray * _Nonnull sortArr , NSArray * _Nonnull needRemoveFromCacheMapArray) {

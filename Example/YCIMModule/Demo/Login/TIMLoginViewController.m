@@ -1,6 +1,6 @@
 //
 //  TIMLoginViewController.m
-//  TencentIMDemo
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "TIMLoginViewController.h"
 #import <Masonry/Masonry.h>
-#import "TIMManager.h"
+#import "YIMManager.h"
 
 @interface TIMLoginViewController ()
 
@@ -53,7 +53,7 @@
 }
 
 - (void)login {
-    [TIMManager.sharedInstance loginWithUserId:@"1234" userSig:@"eJwtzEELgjAYxvHvsmth75zbVPDgJYi62aKgi7gpL5WOKcOIvnumHp-fA-8POZ*KwBtHUhIGQLbzRm3aAWucmYYsWr3Xj9Ja1CSlEYDkSSLo8pjRojOTc85DAFh0wNffhIgllxCztYLNlEVXXfL9tb-vemo6rN3oyyd7NwVtWXfzeZUcFVcH1qpNnJHvD8i7MOQ_"];
+    [YIMManager.sharedInstance loginWithUserId:@"1234" userSig:@"eJwtzEELgjAYxvHvsmth75zbVPDgJYi62aKgi7gpL5WOKcOIvnumHp-fA-8POZ*KwBtHUhIGQLbzRm3aAWucmYYsWr3Xj9Ja1CSlEYDkSSLo8pjRojOTc85DAFh0wNffhIgllxCztYLNlEVXXfL9tb-vemo6rN3oyyd7NwVtWXfzeZUcFVcH1qpNnJHvD8i7MOQ_"];
 }
 
 @end

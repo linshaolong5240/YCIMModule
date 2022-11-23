@@ -1,6 +1,6 @@
 //
-//  UIButton+TIM.h
-//  TencentIMDemo
+//  UIButton+YIM.h
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/21.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -10,10 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIButton (TIM)
+@interface UIButton (YIM)
 
-- (void)tim_alignVerticalImageTextWithSpacing:(CGFloat)spacing;
-- (void)tim_alignVerticalImageText;
+- (void)yim_alignVerticalImageTextWithSpacing:(CGFloat)spacing;
+- (void)yim_alignVerticalImageText;
 
 @end
 

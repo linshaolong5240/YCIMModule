@@ -1,14 +1,14 @@
 //
-//  TIMImage.m
-//  TencentIMDemo
+//  YIMImage.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/23.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMImage.h"
+#import "YIMImage.h"
 
-@implementation TIMImage
+@implementation YIMImage
 
 + (UIImage *)bundleImage:(NSString *)imageName {
     static NSBundle *resourceBundle = nil;

@@ -1,6 +1,6 @@
 //
-//  TIMConversationListController.h
-//  TencentIMDemo
+//  YIMConversationListController.h
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/23.
 //  Copyright © 2022 sauronpi. All rights reserved.
@@ -59,7 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  4. The number of unread messages (if there are unread messages)
  *  5. Conversation time (receive/send time of the latest message)
  */
-@interface TIMConversationListController : UIViewController
+@interface YIMConversationListController : UIViewController
 
 @property (nonatomic, strong) UITableView *tableView;
 

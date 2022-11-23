@@ -1,12 +1,12 @@
 //
 //  TIMManager.m
-//  TencentIMDemo
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMManager.h"
+#import "YIMManager.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 
 static NSString * const TIMManagerUserId = @"TIMManagerUserId";
@@ -26,7 +26,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
     }
 }
 
-@interface TIMManager () <V2TIMSDKListener>
+@interface YIMManager () <V2TIMSDKListener>
 
 @property (nonatomic, strong) NSHashTable *listeners;
 
@@ -35,7 +35,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 
 @end
 
-@implementation TIMManager
+@implementation YIMManager
 
 #pragma mark - Public
 
@@ -49,10 +49,10 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 + (instancetype)sharedInstance {
-    static TIMManager *shared = nil;
+    static YIMManager *shared = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        shared = [[TIMManager alloc] init];
+        shared = [[YIMManager alloc] init];
     });
     
     return shared;
@@ -86,13 +86,13 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
     [[V2TIMManager sharedInstance] unInitSDK];
 }
 
-- (void)addListener:(id <TIMManagerListenr>)listener {
+- (void)addListener:(id <YIMManagerListenr>)listener {
     if (![self.listeners containsObject:listener]) {
         [self.listeners addObject:listener];
     }
 }
 
-- (void)removeListener:(id <TIMManagerListenr>)listener {
+- (void)removeListener:(id <YIMManagerListenr>)listener {
     if ([self.listeners containsObject:listener]) {
         [self.listeners removeObject:listener];
     }
@@ -144,7 +144,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 #pragma mark - Private
 
 - (void)listenersOnConnecting {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timOnConnecting)]) {
             [listener timOnConnecting];
         }
@@ -152,7 +152,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 - (void)listenersOnConnectSuccess {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timOnConnectSuccess)]) {
             [listener timOnConnectSuccess];
         }
@@ -160,7 +160,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 - (void)listenersOnConnectFailed:(int)code error:(NSString*)error {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timOnConnectFailed:error:)]) {
             [listener timOnConnectFailed:code error:error];
         }
@@ -168,7 +168,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 - (void)listenersOnKickedOffline {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timOnKickedOffline)]) {
             [listener timOnKickedOffline];
         }
@@ -176,7 +176,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 - (void)listenersOnUserSigExpired {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timOnUserSigExpired)]) {
             [listener timOnUserSigExpired];
         }
@@ -184,7 +184,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 - (void)listenersOnSelfInfoUpdated:(V2TIMUserFullInfo *)Info {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timOnSelfInfoUpdated:)]) {
             [listener timOnSelfInfoUpdated:Info];
         }
@@ -192,7 +192,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 - (void)listenrsDidLoginWithUserId:(NSString *)userId {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timManager:didLoginWithUserId:)]) {
             [listener timManager:self didLoginWithUserId:userId];
         }
@@ -200,7 +200,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 - (void)listenrsDidLoginFailedWithCode:(int)code description:(NSString *)description {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timManager:didLoginFailedWithCode:description:)]) {
             [listener timManager:self didLoginFailedWithCode:code description:description];
         }
@@ -208,7 +208,7 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
 }
 
 - (void)listenrsDidLogutWithUserId:(NSString *)userId {
-    for(id <TIMManagerListenr> listener in self.listeners) {
+    for(id <YIMManagerListenr> listener in self.listeners) {
         if ([listener respondsToSelector:@selector(timManager:didLogoutWithUserId:)]) {
             [listener timManager:self didLogoutWithUserId:userId];
         }

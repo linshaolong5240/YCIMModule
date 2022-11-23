@@ -1,11 +1,11 @@
 //
-//  TIMHomeViewController.m
-//  TencentIMDemo
+//  YIMHomeViewController.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/17.
 //
 
-#import "TIMHomeViewController.h"
+#import "YIMHomeViewController.h"
 #import <Masonry/Masonry.h>
 #import <JXCategoryView/JXCategoryView.h>
 #import <TUICommonModel.h>
@@ -19,10 +19,10 @@
 #import <TUIGroupService.h>
 #import <TUIGroupChatViewController.h>
 
-#import "TIMMessageViewController.h"
-#import "TIMContactViewController.h"
-#import "TIMFriendDynamicsViewController.h"
-#import "TIMPopView.h"
+#import "YIMMessageViewController.h"
+#import "YIMContactViewController.h"
+#import "YIMFriendDynamicsViewController.h"
+#import "YIMPopMenuView.h"
 #import "TIMPopCell.h"
 #import "TUIThemeManager.h"
 
@@ -46,28 +46,28 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
     }
 }
 
-@interface TIMHomeViewController () <JXCategoryViewDelegate, JXCategoryListContainerViewDelegate, TIMPopViewDelegate>
+@interface YIMHomeViewController () <JXCategoryViewDelegate, JXCategoryListContainerViewDelegate, TIMPopViewDelegate>
 
 @property(nonatomic, copy) NSArray<NSString *> *categories;
 @property(nonatomic, strong) JXCategoryTitleView *categoryView;
 @property(nonatomic, strong) JXCategoryListContainerView *listContainerView;
 
-@property(nonatomic, strong) TIMMessageViewController *messageVC;
-@property(nonatomic, strong) TIMContactViewController *contactVC;
-@property(nonatomic, strong) TIMFriendDynamicsViewController *friendDynamicsVC;
+@property(nonatomic, strong) YIMMessageViewController *messageVC;
+@property(nonatomic, strong) YIMContactViewController *contactVC;
+@property(nonatomic, strong) YIMFriendDynamicsViewController *friendDynamicsVC;
 
 @end
 
-@implementation TIMHomeViewController
+@implementation YIMHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.messageVC = [[TIMMessageViewController alloc] init];
+    self.messageVC = [[YIMMessageViewController alloc] init];
     [self addChildViewController:self.messageVC];
-    self.contactVC = [[TIMContactViewController alloc] init];
+    self.contactVC = [[YIMContactViewController alloc] init];
     [self addChildViewController:self.contactVC];
-    self.friendDynamicsVC = [[TIMFriendDynamicsViewController alloc] init];
+    self.friendDynamicsVC = [[YIMFriendDynamicsViewController alloc] init];
     [self addChildViewController:self.friendDynamicsVC];
 
     self.categories = @[
@@ -151,19 +151,19 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
         case TIMHomeItemMessage:
         {
             NSMutableArray *menus = [NSMutableArray array];
-            TIMPopCellData *friend = [[TIMPopCellData alloc] init];
+            TIMPopMenuCellData *friend = [[TIMPopMenuCellData alloc] init];
             friend.image = TUIDemoDynamicImage(@"pop_icon_new_chat_img", [UIImage imageNamed:TUIDemoImagePath(@"new_chat")]);
             friend.title = @"新会话";
             [menus addObject:friend];
             
-            TIMPopCellData *group = [[TIMPopCellData alloc] init];
+            TIMPopMenuCellData *group = [[TIMPopMenuCellData alloc] init];
             group.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             group.title = @"新群聊";
             [menus addObject:group];
             
             CGFloat height = [TIMPopCell getHeight] * menus.count + TPopView_Arrow_Size.height;
             CGFloat orginY = StatusBar_Height + NavBar_Height;
-            TIMPopView *popView = [[TIMPopView alloc] initWithFrame:CGRectMake(Screen_Width - 155, orginY, 145, height)];
+            YIMPopMenuView *popView = [[YIMPopMenuView alloc] initWithFrame:CGRectMake(Screen_Width - 155, orginY, 145, height)];
             CGRect frameInNaviView = [self.navigationController.view convertRect:button.frame fromView:button.superview];
             popView.arrowPoint = CGPointMake(frameInNaviView.origin.x + frameInNaviView.size.width * 0.5, orginY);
             popView.delegate = self;
@@ -174,29 +174,29 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
         case TIMHomeItemContact:
         {
             NSMutableArray *menus = [NSMutableArray array];
-            TIMPopCellData *addFriend = [[TIMPopCellData alloc] init];
+            TIMPopMenuCellData *addFriend = [[TIMPopMenuCellData alloc] init];
             addFriend.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             addFriend.title = @"添加好友";
             [menus addObject:addFriend];
             
-            TIMPopCellData *scan = [[TIMPopCellData alloc] init];
+            TIMPopMenuCellData *scan = [[TIMPopMenuCellData alloc] init];
             scan.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             scan.title = @"扫一扫";
             [menus addObject:scan];
             
-            TIMPopCellData *myQRCode = [[TIMPopCellData alloc] init];
+            TIMPopMenuCellData *myQRCode = [[TIMPopMenuCellData alloc] init];
             myQRCode.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             myQRCode.title = @"我的二维码";
             [menus addObject:myQRCode];
             
-            TIMPopCellData *messageSetting = [[TIMPopCellData alloc] init];
+            TIMPopMenuCellData *messageSetting = [[TIMPopMenuCellData alloc] init];
             messageSetting.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             messageSetting.title = @"消息设置";
             [menus addObject:messageSetting];
             
             CGFloat height = [TIMPopCell getHeight] * menus.count + TPopView_Arrow_Size.height;
             CGFloat orginY = StatusBar_Height + NavBar_Height;
-            TIMPopView *popView = [[TIMPopView alloc] initWithFrame:CGRectMake(Screen_Width - 155, orginY, 145, height)];
+            YIMPopMenuView *popView = [[YIMPopMenuView alloc] initWithFrame:CGRectMake(Screen_Width - 155, orginY, 145, height)];
             CGRect frameInNaviView = [self.navigationController.view convertRect:button.frame fromView:button.superview];
             popView.arrowPoint = CGPointMake(frameInNaviView.origin.x + frameInNaviView.size.width * 0.5, orginY);
             popView.delegate = self;
@@ -243,7 +243,7 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
 
 #pragma mark - TIMPopViewDelegate
 
-- (void)popView:(TIMPopView *)popView didSelectRowAtIndex:(NSInteger)index {
+- (void)popView:(YIMPopMenuView *)popView didSelectRowAtIndex:(NSInteger)index {
     @weakify(self)
     if (index == 0) {
         // launch conversation

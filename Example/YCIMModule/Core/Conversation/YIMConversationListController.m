@@ -1,18 +1,18 @@
 //
-//  TIMConversationListController.m
-//  TencentIMDemo
+//  YIMConversationListController.m
+//  YCIMModule
 //
 //  Created by Sauron on 2022/11/23.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMConversationListController.h"
+#import "YIMConversationListController.h"
 #import "TUIConversationCell.h"
 #import "TUICore.h"
 #import "TUIDefine.h"
 #import "TUIThemeManager.h"
 #import "TUIConversationListDataProvider.h"
-#import "TIMImage.h"
+#import "YIMImage.h"
 
 typedef NS_ENUM(NSUInteger, TIMConversationListSectionType) {
     TIMConversationListSectionTypeService,
@@ -22,11 +22,11 @@ typedef NS_ENUM(NSUInteger, TIMConversationListSectionType) {
 
 static NSString *kConversationCell_ReuseId = @"TConversationCell";
 
-@interface TIMConversationListController () <UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate, TUINotificationProtocol, TUIConversationListDataProviderDelegate>
+@interface YIMConversationListController () <UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate, TUINotificationProtocol, TUIConversationListDataProviderDelegate>
 
 @end
 
-@implementation TIMConversationListController
+@implementation YIMConversationListController
 
 - (instancetype)init {
     self = [super init];
@@ -379,7 +379,7 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
                 TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
                 data.title = @"title";
                 data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"🍎subTitle attributedString"];
-                data.avatarImage = [TIMImage imageNamed:@"icon_serviece_notification"];
+                data.avatarImage = [YIMImage imageNamed:@"icon_serviece_notification"];
                 [cell fillWithData:data];
                 return cell;
             } else {
@@ -387,7 +387,7 @@ static NSString *kConversationCell_ReuseId = @"TConversationCell";
                 TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
                 data.title = @"title";
                 data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"🍎subTitle attributedString"];
-                data.avatarImage = [TIMImage imageNamed:@"avatar_service_store"];
+                data.avatarImage = [YIMImage imageNamed:@"avatar_service_store"];
                 [cell fillWithData:data];
                 return cell;
             }
