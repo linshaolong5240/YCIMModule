@@ -1,13 +1,13 @@
 //
-//  YIMContactViewController.m
+//  YCContactViewController.m
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "YIMContactViewController.h"
-#import <TUIContactController.h>
+#import "YCContactViewController.h"
+#import "YIMContactController.h"
 #import <TUIFriendProfileController.h>
 #import <TUINewFriendViewController.h>
 #import "TUIUserProfileController.h"
@@ -16,14 +16,14 @@
 
 #import "YIMManager.h"
 
-@interface YIMContactViewController () <TUIContactControllerListener>
+@interface YCContactViewController () <YIMContactControllerListener>
 
 @property (nonatomic, strong) TUINaviBarIndicatorView *titleView;
-@property (nonatomic, strong) TUIContactController *contactVC;
+@property (nonatomic, strong) YIMContactController *contactVC;
 
 @end
 
-@implementation YIMContactViewController
+@implementation YCContactViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +33,7 @@
     self.navigationItem.titleView = _titleView;
     self.navigationItem.title = @"";
 
-    self.contactVC = [[TUIContactController alloc] init];
+    self.contactVC = [[YIMContactController alloc] init];
     self.contactVC.delegate = self;
     [self addChildViewController:self.contactVC];
     [self.view addSubview:self.contactVC.view];

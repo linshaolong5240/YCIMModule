@@ -71,7 +71,7 @@
         TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
         data.title = @"服务提醒";
         data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"新版本发布2021-01-05"];
-        data.avatarImage = [YIMImage imageNamed:@"icon_serviece_notification"];
+        data.avatarImage = [YIMImage imageNamed:@"avatar_serviece_notification"];
         data.unreadCount = 1;
         data.time = [NSDate date];
         [cell fillWithData:data];

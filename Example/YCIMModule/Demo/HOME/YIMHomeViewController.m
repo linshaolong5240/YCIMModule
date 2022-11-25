@@ -20,7 +20,7 @@
 #import <TUIGroupChatViewController.h>
 
 #import "YIMMessageViewController.h"
-#import "YIMContactViewController.h"
+#import "YCContactViewController.h"
 #import "YIMFriendDynamicsViewController.h"
 #import "YIMPopMenuView.h"
 #import "TIMPopCell.h"
@@ -53,7 +53,7 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
 @property(nonatomic, strong) JXCategoryListContainerView *listContainerView;
 
 @property(nonatomic, strong) YIMMessageViewController *messageVC;
-@property(nonatomic, strong) YIMContactViewController *contactVC;
+@property(nonatomic, strong) YCContactViewController *contactVC;
 @property(nonatomic, strong) YIMFriendDynamicsViewController *friendDynamicsVC;
 
 @end
@@ -65,7 +65,7 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
     // Do any additional setup after loading the view.
     self.messageVC = [[YIMMessageViewController alloc] init];
     [self addChildViewController:self.messageVC];
-    self.contactVC = [[YIMContactViewController alloc] init];
+    self.contactVC = [[YCContactViewController alloc] init];
     [self addChildViewController:self.contactVC];
     self.friendDynamicsVC = [[YIMFriendDynamicsViewController alloc] init];
     [self addChildViewController:self.friendDynamicsVC];

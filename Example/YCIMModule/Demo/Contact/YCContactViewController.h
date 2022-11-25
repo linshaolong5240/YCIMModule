@@ -1,5 +1,5 @@
 //
-//  YIMContactViewController.h
+//  YCContactViewController.h
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YIMContactViewController : YIMBaseViewController
+@interface YCContactViewController : YIMBaseViewController
 
 @end
 

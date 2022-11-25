@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>id</key>
-	<string>tim</string>
+	<string>yim</string>
 	<key>name</key>
-	<string>tim</string>
+	<string>yim</string>
 	<key>name_en</key>
-	<string>TIM</string>
+	<string>YIM</string>
 	<key>conversation_cell_bg_color</key>
 	<string>#FFFFFF</string>
 	<key>conversation_cell_top_bg_color</key>

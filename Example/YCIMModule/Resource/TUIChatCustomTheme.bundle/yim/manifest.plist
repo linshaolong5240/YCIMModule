@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>id</key>
-	<string>tim</string>
+	<string>yim</string>
 	<key>name</key>
-	<string>tim</string>
+	<string>yim</string>
 	<key>name_en</key>
-	<string>TIM</string>
+	<string>YIM</string>
 	<key>chat_custom_order_message_img</key>
 	<string>message_custom_order</string>
 	<key>chat_custom_order_message_desc_color</key>

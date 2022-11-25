@@ -37,16 +37,19 @@ TUIOfflinePushCertificateIDForAPNS(36102)
     // -- 1. 获取自定义后的资源包路径
     // -- 2. 给 TUIChat 组件注册自定义的主题资源包路径，用于覆盖内置的主题，note: 此时只能覆盖 TUIThemeModuleChat
     TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUICoreCustomTheme.bundle" ofType:nil], TUIThemeModuleCore);
-    [TUIThemeManager.shareManager applyTheme:@"tim" forModule:TUIThemeModuleCore];
+    [TUIThemeManager.shareManager applyTheme:@"yim" forModule:TUIThemeModuleCore];
     
     TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUIConversationCustomTheme.bundle" ofType:nil], TUIThemeModuleConversation);
-    [TUIThemeManager.shareManager applyTheme:@"tim" forModule:TUIThemeModuleConversation];
+    [TUIThemeManager.shareManager applyTheme:@"yim" forModule:TUIThemeModuleConversation];
 
     TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUIChatCustomTheme.bundle" ofType:nil], TUIThemeModuleChat);
-    [TUIThemeManager.shareManager applyTheme:@"tim" forModule:TUIThemeModuleChat];
+    [TUIThemeManager.shareManager applyTheme:@"yim" forModule:TUIThemeModuleChat];
     
+    TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUIContactCustomTheme.bundle" ofType:nil], TUIThemeModuleContact);
+    [TUIThemeManager.shareManager applyTheme:@"yim" forModule:TUIThemeModuleContact];
+
     TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUIDemoTheme.bundle" ofType:nil], TUIThemeModuleDemo);
-    [TUIThemeManager.shareManager applyTheme:@"tim" forModule:TUIThemeModuleDemo];
+    [TUIThemeManager.shareManager applyTheme:@"yim" forModule:TUIThemeModuleDemo];
 
     [YIMManager.sharedInstance addListener:self];
     [[YIMManager sharedInstance] initSDKWithAppId:1400759961];
