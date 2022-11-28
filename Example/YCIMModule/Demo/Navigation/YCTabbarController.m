@@ -7,7 +7,7 @@
 //
 
 #import "YCTabbarController.h"
-#import "TIMNavigationController.h"
+#import "YIMNavigationController.h"
 #import "YCIMHomeViewController.h"
 
 @interface YCTabbarController ()
@@ -36,7 +36,7 @@
 }
 
 - (UIViewController *)makeTabBarViewController:(UIViewController *)viewController title:(nullable NSString *)title image:(nullable UIImage *)image selectedImage:(nullable UIImage *)selectedImage {
-    UIViewController *vc = [[TIMNavigationController alloc] initWithRootViewController:viewController];
+    UIViewController *vc = [[YIMNavigationController alloc] initWithRootViewController:viewController];
     UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:image selectedImage:selectedImage];
     vc.tabBarItem = tabBarItem;
     return vc;

@@ -1,18 +1,18 @@
 //
-//  TIMNavigationController.m
+//  YIMNavigationController.m
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/22.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMNavigationController.h"
+#import "YIMNavigationController.h"
 
-@interface TIMNavigationController ()
+@interface YIMNavigationController ()
 
 @end
 
-@implementation TIMNavigationController
+@implementation YIMNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

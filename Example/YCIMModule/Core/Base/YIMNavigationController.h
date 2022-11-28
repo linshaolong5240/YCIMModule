@@ -1,5 +1,5 @@
 //
-//  TIMNavigationController.h
+//  YIMNavigationController.h
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/22.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TIMNavigationController : TUINavigationController
+@interface YIMNavigationController : TUINavigationController
 
 @end
 

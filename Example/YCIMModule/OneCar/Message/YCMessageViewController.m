@@ -13,9 +13,12 @@
 #import <TUIGroupChatViewController.h>
 #import "YIMConversationFoldListViewController.h"
 #import "YIMConversationListController.h"
+#import "YCServiceNotifacationViewController.h"
 #import "YIMImage.h"
 
 @interface YCMessageViewController () <YIMConversationListControllerCustomDelegate , YIMConversationListControllerListener>
+
+@property(nonatomic, strong) NSMutableArray *firstGroupCellDatas;
 
 @end
 
@@ -25,6 +28,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.firstGroupCellDatas = [NSMutableArray array];
+    TUIConversationCellData *data1 = [[TUIConversationCellData alloc] init];
+    data1.title = @"服务提醒";
+    data1.subTitle = [[NSMutableAttributedString alloc] initWithString:@"新版本发布2021-01-05"];
+    data1.avatarImage = [YIMImage imageNamed:@"avatar_serviece_notification"];
+    data1.unreadCount = 1;
+    data1.time = [NSDate date];
+    
+    TUIConversationCellData *data2 = [[TUIConversationCellData alloc] init];
+    data2.title = @"已服务商家";
+    data2.subTitle = [[NSMutableAttributedString alloc] initWithString:@"已服务过的商家"];
+    data2.avatarImage = [YIMImage imageNamed:@"avatar_service_store"];
+    data2.unreadCount = 2;
+    data2.time = [NSDate date];
+
+    [self.firstGroupCellDatas addObject: data1];
+    [self.firstGroupCellDatas addObject: data2];
+
     YIMConversationListController *conversationController = [[YIMConversationListController alloc] init];
     conversationController.isEnableSearch = NO;
     conversationController.delegate = self;
@@ -62,35 +83,22 @@
 
 #pragma mark - YIMConversationListControllerCustomDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInCustomSection:(NSInteger)section {
-    return 2;
+    return self.firstGroupCellDatas.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForCustomAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TUIConversationCell class]) forIndexPath:indexPath];
-        TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
-        data.title = @"服务提醒";
-        data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"新版本发布2021-01-05"];
-        data.avatarImage = [YIMImage imageNamed:@"avatar_serviece_notification"];
-        data.unreadCount = 1;
-        data.time = [NSDate date];
-        [cell fillWithData:data];
-        return cell;
-    } else {
-        TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TUIConversationCell class]) forIndexPath:indexPath];
-        TUIConversationCellData *data = [[TUIConversationCellData alloc] init];
-        data.title = @"已服务商家";
-        data.subTitle = [[NSMutableAttributedString alloc] initWithString:@"已服务过的商家"];
-        data.avatarImage = [YIMImage imageNamed:@"avatar_service_store"];
-        [cell fillWithData:data];
-        return cell;
-    }
+    TUIConversationCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TUIConversationCell class]) forIndexPath:indexPath];
+    [cell fillWithData:self.firstGroupCellDatas[indexPath.row]];
+    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectCustomAtIndexPath:(NSIndexPath *)indexPath {
 #if DEBUG
     NSLog(@"%s", __PRETTY_FUNCTION__);
 #endif
+    TUIBaseChatViewController *vc = [YCServiceNotifacationViewController new];
+    vc.conversationData = [self getConversationModel:self.firstGroupCellDatas[indexPath.row]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - TUIConversationListControllerListener
