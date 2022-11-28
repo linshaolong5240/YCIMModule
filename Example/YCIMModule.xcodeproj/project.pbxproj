@@ -151,7 +151,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18457C2C292E026000C34991 /* Demo */ = {
+		18457C2C292E026000C34991 /* OneCar */ = {
 			isa = PBXGroup;
 			children = (
 				18457C35292E026000C34991 /* Contact */,
@@ -161,7 +161,7 @@
 				18457C4B292E026100C34991 /* Message */,
 				18457C32292E026000C34991 /* Navigation */,
 			);
-			path = Demo;
+			path = OneCar;
 			sourceTree = "<group>";
 		};
 		18457C2D292E026000C34991 /* HOME */ = {
@@ -355,7 +355,7 @@
 		6003F593195388D20070C39A /* Example for YCIMModule */ = {
 			isa = PBXGroup;
 			children = (
-				18457C2C292E026000C34991 /* Demo */,
+				18457C2C292E026000C34991 /* OneCar */,
 				18457C38292E026100C34991 /* Core */,
 				18457C55292E026100C34991 /* Resource */,
 				6003F59C195388D20070C39A /* YIMAppDelegate.h */,
