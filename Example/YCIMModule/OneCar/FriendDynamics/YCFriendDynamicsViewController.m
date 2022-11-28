@@ -1,18 +1,18 @@
 //
-//  YIMFriendDynamicsViewController.m
+//  YCFriendDynamicsViewController.m
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "YIMFriendDynamicsViewController.h"
+#import "YCFriendDynamicsViewController.h"
 
-@interface YIMFriendDynamicsViewController ()
+@interface YCFriendDynamicsViewController ()
 
 @end
 
-@implementation YIMFriendDynamicsViewController
+@implementation YCFriendDynamicsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

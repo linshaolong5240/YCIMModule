@@ -1,5 +1,5 @@
 //
-//  YIMAppDelegate.h
+//  YCAppDelegate.h
 //  YCIMModule
 //
 //  Created by Sauron on 11/23/2022.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface YIMAppDelegate : UIResponder <UIApplicationDelegate>
+@interface YCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

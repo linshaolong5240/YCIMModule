@@ -1,26 +1,26 @@
 //
-//  YIMAppDelegate.m
+//  YCAppDelegate.m
 //  YCIMModule
 //
 //  Created by Sauron on 11/23/2022.
 //  Copyright (c) 2022 YRYC. All rights reserved.
 //
 
-#import "YIMAppDelegate.h"
+#import "YCAppDelegate.h"
 #import <UserNotifications/UserNotifications.h>
 #import "YIMManager.h"
-#import "TIMLoginViewController.h"
+#import "YCLoginViewController.h"
 #import <TUIDefine.h>
 #import <TUIThemeManager.h>
 #import <TUIOfflinePushManager+Advance.h>
 
-#import "YIMTabbarController.h"
+#import "YCTabbarController.h"
 
-@interface YIMAppDelegate () <YIMManagerListenr>
+@interface YCAppDelegate () <YIMManagerListenr>
 
 @end
 
-@implementation YIMAppDelegate
+@implementation YCAppDelegate
 
 #if 0
 // 配置开发环境证书
@@ -57,7 +57,7 @@ TUIOfflinePushCertificateIDForAPNS(36102)
     
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     self.window.backgroundColor = UIColor.whiteColor;
-    UIViewController *rootViewController = [YIMTabbarController new];
+    UIViewController *rootViewController = [YCTabbarController new];
     self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     return YES;
@@ -74,14 +74,14 @@ TUIOfflinePushCertificateIDForAPNS(36102)
 - (void)timOnConnectFailed:(int)code error:(NSString*)error { }
 - (void)timOnKickedOffline {
     [TUIOfflinePushManager.shareManager unregisterService];
-    UIViewController *rootViewController = [[UINavigationController alloc] initWithRootViewController:[TIMLoginViewController new]];
+    UIViewController *rootViewController = [[UINavigationController alloc] initWithRootViewController:[YCLoginViewController new]];
     self.window.rootViewController = rootViewController;
 }
 - (void)timOnUserSigExpired { }
 - (void)timOnSelfInfoUpdated:(V2TIMUserFullInfo *)Info { }
 
 - (void)timManager:(YIMManager *)manager didLoginWithUserId:(NSString *)userId {
-    YIMTabbarController *tabBarController = (YIMTabbarController *)self.window.rootViewController;
+    YCTabbarController *tabBarController = (YCTabbarController *)self.window.rootViewController;
     tabBarController.selectedViewController = tabBarController.viewControllers[1];
 }
 

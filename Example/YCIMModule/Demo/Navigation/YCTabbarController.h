@@ -1,5 +1,5 @@
 //
-//  YIMTabbarController.h
+//  YCTabbarController.h
 //  YCIMModule
 //
 //  Created by Saruon on 2022/11/22.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YIMTabbarController : UITabBarController
+@interface YCTabbarController : UITabBarController
 
 @end
 

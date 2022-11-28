@@ -1,11 +1,11 @@
 //
-//  YIMHomeViewController.m
+//  YCIMHomeViewController.m
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/17.
 //
 
-#import "YIMHomeViewController.h"
+#import "YCIMHomeViewController.h"
 #import <Masonry/Masonry.h>
 #import <JXCategoryView/JXCategoryView.h>
 #import <TUICommonModel.h>
@@ -19,9 +19,9 @@
 #import <TUIGroupService.h>
 #import <TUIGroupChatViewController.h>
 
-#import "YIMMessageViewController.h"
+#import "YCMessageViewController.h"
 #import "YCContactViewController.h"
-#import "YIMFriendDynamicsViewController.h"
+#import "YCFriendDynamicsViewController.h"
 #import "YIMPopMenuView.h"
 #import "TIMPopCell.h"
 #import "TUIThemeManager.h"
@@ -46,28 +46,28 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
     }
 }
 
-@interface YIMHomeViewController () <JXCategoryViewDelegate, JXCategoryListContainerViewDelegate, TIMPopViewDelegate>
+@interface YCIMHomeViewController () <JXCategoryViewDelegate, JXCategoryListContainerViewDelegate, TIMPopViewDelegate>
 
 @property(nonatomic, copy) NSArray<NSString *> *categories;
 @property(nonatomic, strong) JXCategoryTitleView *categoryView;
 @property(nonatomic, strong) JXCategoryListContainerView *listContainerView;
 
-@property(nonatomic, strong) YIMMessageViewController *messageVC;
+@property(nonatomic, strong) YCMessageViewController *messageVC;
 @property(nonatomic, strong) YCContactViewController *contactVC;
-@property(nonatomic, strong) YIMFriendDynamicsViewController *friendDynamicsVC;
+@property(nonatomic, strong) YCFriendDynamicsViewController *friendDynamicsVC;
 
 @end
 
-@implementation YIMHomeViewController
+@implementation YCIMHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.messageVC = [[YIMMessageViewController alloc] init];
+    self.messageVC = [[YCMessageViewController alloc] init];
     [self addChildViewController:self.messageVC];
     self.contactVC = [[YCContactViewController alloc] init];
     [self addChildViewController:self.contactVC];
-    self.friendDynamicsVC = [[YIMFriendDynamicsViewController alloc] init];
+    self.friendDynamicsVC = [[YCFriendDynamicsViewController alloc] init];
     [self addChildViewController:self.friendDynamicsVC];
 
     self.categories = @[

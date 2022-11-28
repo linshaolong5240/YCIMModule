@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18457C5E292E026100C34991 /* YIMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C2F292E026000C34991 /* YIMHomeViewController.m */; };
-		18457C60292E026100C34991 /* YIMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C34292E026000C34991 /* YIMTabbarController.m */; };
+		18457C5E292E026100C34991 /* YCIMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C2F292E026000C34991 /* YCIMHomeViewController.m */; };
+		18457C60292E026100C34991 /* YCTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C34292E026000C34991 /* YCTabbarController.m */; };
 		18457C61292E026100C34991 /* YCContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C36292E026000C34991 /* YCContactViewController.m */; };
 		18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3A292E026100C34991 /* YIMPopMenuView.m */; };
 		18457C63292E026100C34991 /* TIMPopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3B292E026100C34991 /* TIMPopCell.m */; };
@@ -18,15 +18,15 @@
 		18457C67292E026100C34991 /* TIMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C49292E026100C34991 /* TIMNavigationController.m */; };
 		18457C68292E026100C34991 /* YIMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* YIMBaseViewController.m */; };
 		18457C69292E026100C34991 /* YIMConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4C292E026100C34991 /* YIMConversationListController.m */; };
-		18457C6A292E026100C34991 /* YIMFoldListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4D292E026100C34991 /* YIMFoldListViewController.m */; };
-		18457C6B292E026100C34991 /* YIMMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4E292E026100C34991 /* YIMMessageViewController.m */; };
-		18457C6C292E026100C34991 /* YIMFriendDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C53292E026100C34991 /* YIMFriendDynamicsViewController.m */; };
+		18457C6A292E026100C34991 /* YIMConversationFoldListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4D292E026100C34991 /* YIMConversationFoldListViewController.m */; };
+		18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4E292E026100C34991 /* YCMessageViewController.m */; };
+		18457C6C292E026100C34991 /* YCFriendDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C53292E026100C34991 /* YCFriendDynamicsViewController.m */; };
 		18457C6D292E026100C34991 /* TUIChatCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */; };
 		18457C6E292E026100C34991 /* TUIConversationCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */; };
 		18457C6F292E026100C34991 /* TUICoreCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */; };
 		18457C70292E026100C34991 /* TUIDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C59292E026100C34991 /* TUIDemo.bundle */; };
 		18457C71292E026100C34991 /* TUIDemoTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C5A292E026100C34991 /* TUIDemoTheme.bundle */; };
-		18457C72292E026100C34991 /* TIMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C5C292E026100C34991 /* TIMLoginViewController.m */; };
+		18457C72292E026100C34991 /* YCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C5C292E026100C34991 /* YCLoginViewController.m */; };
 		18C49846292F00FA00574E1B /* YIMContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C49845292F00FA00574E1B /* YIMContactController.m */; };
 		18F9EAEF2930BF9300BF43FC /* TUIContactCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAEE2930BF9300BF43FC /* TUIContactCustomTheme.bundle */; };
 		39180815620D7B24ADDC7E08 /* Pods_YCIMModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E6AF0FA224F91138D3827D /* Pods_YCIMModule_Tests.framework */; };
@@ -36,7 +36,7 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* YIMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* YIMAppDelegate.m */; };
+		6003F59E195388D20070C39A /* YCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* YCAppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -59,10 +59,10 @@
 /* Begin PBXFileReference section */
 		0BEF27B23A0B4CA0340E2398 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		11DF042EB01A993A9333AD2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		18457C2E292E026000C34991 /* YIMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMHomeViewController.h; sourceTree = "<group>"; };
-		18457C2F292E026000C34991 /* YIMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMHomeViewController.m; sourceTree = "<group>"; };
-		18457C33292E026000C34991 /* YIMTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMTabbarController.h; sourceTree = "<group>"; };
-		18457C34292E026000C34991 /* YIMTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMTabbarController.m; sourceTree = "<group>"; };
+		18457C2E292E026000C34991 /* YCIMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIMHomeViewController.h; sourceTree = "<group>"; };
+		18457C2F292E026000C34991 /* YCIMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIMHomeViewController.m; sourceTree = "<group>"; };
+		18457C33292E026000C34991 /* YCTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabbarController.h; sourceTree = "<group>"; };
+		18457C34292E026000C34991 /* YCTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTabbarController.m; sourceTree = "<group>"; };
 		18457C36292E026000C34991 /* YCContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCContactViewController.m; sourceTree = "<group>"; };
 		18457C37292E026000C34991 /* YCContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCContactViewController.h; sourceTree = "<group>"; };
 		18457C3A292E026100C34991 /* YIMPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMPopMenuView.m; sourceTree = "<group>"; };
@@ -80,20 +80,20 @@
 		18457C49292E026100C34991 /* TIMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMNavigationController.m; sourceTree = "<group>"; };
 		18457C4A292E026100C34991 /* YIMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMBaseViewController.m; sourceTree = "<group>"; };
 		18457C4C292E026100C34991 /* YIMConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMConversationListController.m; sourceTree = "<group>"; };
-		18457C4D292E026100C34991 /* YIMFoldListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMFoldListViewController.m; sourceTree = "<group>"; };
-		18457C4E292E026100C34991 /* YIMMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMMessageViewController.m; sourceTree = "<group>"; };
+		18457C4D292E026100C34991 /* YIMConversationFoldListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMConversationFoldListViewController.m; sourceTree = "<group>"; };
+		18457C4E292E026100C34991 /* YCMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMessageViewController.m; sourceTree = "<group>"; };
 		18457C4F292E026100C34991 /* YIMConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMConversationListController.h; sourceTree = "<group>"; };
-		18457C50292E026100C34991 /* YIMMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMMessageViewController.h; sourceTree = "<group>"; };
-		18457C51292E026100C34991 /* YIMFoldListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMFoldListViewController.h; sourceTree = "<group>"; };
-		18457C53292E026100C34991 /* YIMFriendDynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMFriendDynamicsViewController.m; sourceTree = "<group>"; };
-		18457C54292E026100C34991 /* YIMFriendDynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMFriendDynamicsViewController.h; sourceTree = "<group>"; };
+		18457C50292E026100C34991 /* YCMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMessageViewController.h; sourceTree = "<group>"; };
+		18457C51292E026100C34991 /* YIMConversationFoldListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMConversationFoldListViewController.h; sourceTree = "<group>"; };
+		18457C53292E026100C34991 /* YCFriendDynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFriendDynamicsViewController.m; sourceTree = "<group>"; };
+		18457C54292E026100C34991 /* YCFriendDynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFriendDynamicsViewController.h; sourceTree = "<group>"; };
 		18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIChatCustomTheme.bundle; sourceTree = "<group>"; };
 		18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIConversationCustomTheme.bundle; sourceTree = "<group>"; };
 		18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUICoreCustomTheme.bundle; sourceTree = "<group>"; };
 		18457C59292E026100C34991 /* TUIDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIDemo.bundle; sourceTree = "<group>"; };
 		18457C5A292E026100C34991 /* TUIDemoTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIDemoTheme.bundle; sourceTree = "<group>"; };
-		18457C5C292E026100C34991 /* TIMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMLoginViewController.m; sourceTree = "<group>"; };
-		18457C5D292E026100C34991 /* TIMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMLoginViewController.h; sourceTree = "<group>"; };
+		18457C5C292E026100C34991 /* YCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCLoginViewController.m; sourceTree = "<group>"; };
+		18457C5D292E026100C34991 /* YCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCLoginViewController.h; sourceTree = "<group>"; };
 		18457C73292E044800C34991 /* YCIMModule_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YCIMModule_Example.entitlements; sourceTree = "<group>"; };
 		18C49844292F00FA00574E1B /* YIMContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMContactController.h; sourceTree = "<group>"; };
 		18C49845292F00FA00574E1B /* YIMContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMContactController.m; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* YCIMModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YCIMModule-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* YIMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* YIMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMAppDelegate.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* YCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* YCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* YCIMModule_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCIMModule_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -156,28 +156,26 @@
 			children = (
 				18457C35292E026000C34991 /* Contact */,
 				18457C52292E026100C34991 /* FriendDynamics */,
-				18457C2D292E026000C34991 /* HOME */,
 				18457C5B292E026100C34991 /* Login */,
 				18457C4B292E026100C34991 /* Message */,
-				18457C32292E026000C34991 /* Navigation */,
 			);
 			path = OneCar;
 			sourceTree = "<group>";
 		};
-		18457C2D292E026000C34991 /* HOME */ = {
+		18457C2D292E026000C34991 /* IMHome */ = {
 			isa = PBXGroup;
 			children = (
-				18457C2E292E026000C34991 /* YIMHomeViewController.h */,
-				18457C2F292E026000C34991 /* YIMHomeViewController.m */,
+				18457C2E292E026000C34991 /* YCIMHomeViewController.h */,
+				18457C2F292E026000C34991 /* YCIMHomeViewController.m */,
 			);
-			path = HOME;
+			path = IMHome;
 			sourceTree = "<group>";
 		};
 		18457C32292E026000C34991 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				18457C33292E026000C34991 /* YIMTabbarController.h */,
-				18457C34292E026000C34991 /* YIMTabbarController.m */,
+				18457C33292E026000C34991 /* YCTabbarController.h */,
+				18457C34292E026000C34991 /* YCTabbarController.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -249,10 +247,8 @@
 		18457C4B292E026100C34991 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				18457C51292E026100C34991 /* YIMFoldListViewController.h */,
-				18457C4D292E026100C34991 /* YIMFoldListViewController.m */,
-				18457C50292E026100C34991 /* YIMMessageViewController.h */,
-				18457C4E292E026100C34991 /* YIMMessageViewController.m */,
+				18457C50292E026100C34991 /* YCMessageViewController.h */,
+				18457C4E292E026100C34991 /* YCMessageViewController.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -260,8 +256,8 @@
 		18457C52292E026100C34991 /* FriendDynamics */ = {
 			isa = PBXGroup;
 			children = (
-				18457C54292E026100C34991 /* YIMFriendDynamicsViewController.h */,
-				18457C53292E026100C34991 /* YIMFriendDynamicsViewController.m */,
+				18457C54292E026100C34991 /* YCFriendDynamicsViewController.h */,
+				18457C53292E026100C34991 /* YCFriendDynamicsViewController.m */,
 			);
 			path = FriendDynamics;
 			sourceTree = "<group>";
@@ -282,8 +278,8 @@
 		18457C5B292E026100C34991 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				18457C5C292E026100C34991 /* TIMLoginViewController.m */,
-				18457C5D292E026100C34991 /* TIMLoginViewController.h */,
+				18457C5C292E026100C34991 /* YCLoginViewController.m */,
+				18457C5D292E026100C34991 /* YCLoginViewController.h */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -291,10 +287,21 @@
 		18457C74292E075600C34991 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
+				18457C51292E026100C34991 /* YIMConversationFoldListViewController.h */,
+				18457C4D292E026100C34991 /* YIMConversationFoldListViewController.m */,
 				18457C4F292E026100C34991 /* YIMConversationListController.h */,
 				18457C4C292E026100C34991 /* YIMConversationListController.m */,
 			);
 			path = Conversation;
+			sourceTree = "<group>";
+		};
+		1891138629349EC7008B4D7F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				18457C2D292E026000C34991 /* IMHome */,
+				18457C32292E026000C34991 /* Navigation */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		18C49843292F00C200574E1B /* Contact */ = {
@@ -355,11 +362,12 @@
 		6003F593195388D20070C39A /* Example for YCIMModule */ = {
 			isa = PBXGroup;
 			children = (
+				1891138629349EC7008B4D7F /* Demo */,
 				18457C2C292E026000C34991 /* OneCar */,
 				18457C38292E026100C34991 /* Core */,
 				18457C55292E026100C34991 /* Resource */,
-				6003F59C195388D20070C39A /* YIMAppDelegate.h */,
-				6003F59D195388D20070C39A /* YIMAppDelegate.m */,
+				6003F59C195388D20070C39A /* YCAppDelegate.h */,
+				6003F59D195388D20070C39A /* YCAppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -628,19 +636,19 @@
 				18457C65292E026100C34991 /* UIButton+YIM.m in Sources */,
 				18457C69292E026100C34991 /* YIMConversationListController.m in Sources */,
 				18457C63292E026100C34991 /* TIMPopCell.m in Sources */,
-				18457C6B292E026100C34991 /* YIMMessageViewController.m in Sources */,
+				18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */,
 				18457C68292E026100C34991 /* YIMBaseViewController.m in Sources */,
-				18457C72292E026100C34991 /* TIMLoginViewController.m in Sources */,
+				18457C72292E026100C34991 /* YCLoginViewController.m in Sources */,
 				18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */,
 				18457C61292E026100C34991 /* YCContactViewController.m in Sources */,
-				18457C60292E026100C34991 /* YIMTabbarController.m in Sources */,
-				18457C6A292E026100C34991 /* YIMFoldListViewController.m in Sources */,
-				18457C5E292E026100C34991 /* YIMHomeViewController.m in Sources */,
-				6003F59E195388D20070C39A /* YIMAppDelegate.m in Sources */,
+				18457C60292E026100C34991 /* YCTabbarController.m in Sources */,
+				18457C6A292E026100C34991 /* YIMConversationFoldListViewController.m in Sources */,
+				18457C5E292E026100C34991 /* YCIMHomeViewController.m in Sources */,
+				6003F59E195388D20070C39A /* YCAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				18457C64292E026100C34991 /* YIMManager.m in Sources */,
 				18457C67292E026100C34991 /* TIMNavigationController.m in Sources */,
-				18457C6C292E026100C34991 /* YIMFriendDynamicsViewController.m in Sources */,
+				18457C6C292E026100C34991 /* YCFriendDynamicsViewController.m in Sources */,
 				18C49846292F00FA00574E1B /* YIMContactController.m in Sources */,
 				18457C66292E026100C34991 /* YIMImage.m in Sources */,
 			);

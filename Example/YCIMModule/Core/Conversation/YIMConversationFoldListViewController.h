@@ -1,5 +1,5 @@
 //
-//  YIMFoldListViewController.h
+//  YIMConversationFoldListViewController.h
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YIMFoldListViewController : UIViewController
+@interface YIMConversationFoldListViewController : UIViewController
 
 @property (nonatomic,copy) void(^dismissCallback)(NSMutableAttributedString * foldStr,NSArray *sortArr, NSArray *needRemoveFromCacheMapArray);
 

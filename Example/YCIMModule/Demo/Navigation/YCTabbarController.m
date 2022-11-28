@@ -1,20 +1,20 @@
 //
-//  YIMTabbarController.m
+//  YCTabbarController.m
 //  YCIMModule
 //
 //  Created by Saruon on 2022/11/22.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "YIMTabbarController.h"
+#import "YCTabbarController.h"
 #import "TIMNavigationController.h"
-#import "YIMHomeViewController.h"
+#import "YCIMHomeViewController.h"
 
-@interface YIMTabbarController ()
+@interface YCTabbarController ()
 
 @end
 
-@implementation YIMTabbarController
+@implementation YCTabbarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,7 +26,7 @@
     
     if (@available(iOS 13.0, *)) {
         UIViewController *vc0 = [self makeTabBarViewController:[UIViewController new] title:@"vc1" image:[UIImage systemImageNamed:@"circle"] selectedImage:[UIImage systemImageNamed:@"circle.fill"]];
-        UIViewController *vc1 = [self makeTabBarViewController:[YIMHomeViewController new] title:@"TIM" image:[UIImage systemImageNamed:@"message"] selectedImage:[UIImage systemImageNamed:@"message.fill"]];
+        UIViewController *vc1 = [self makeTabBarViewController:[YCIMHomeViewController new] title:@"TIM" image:[UIImage systemImageNamed:@"message"] selectedImage:[UIImage systemImageNamed:@"message.fill"]];
         UIViewController *vc2 = [self makeTabBarViewController:[UIViewController new] title:@"vc3" image:[UIImage systemImageNamed:@"square"] selectedImage:[UIImage systemImageNamed:@"square.fill"]];
         
         self.viewControllers = @[vc0, vc1, vc2];

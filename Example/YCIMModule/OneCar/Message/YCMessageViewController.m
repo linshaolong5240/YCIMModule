@@ -1,25 +1,25 @@
 //
-//  YIMMessageViewController.m
+//  YCMessageViewController.m
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "YIMMessageViewController.h"
+#import "YCMessageViewController.h"
 #import <TUIConversation.h>
 #import <TUIChat.h>
 #import <TUIC2CChatViewController.h>
 #import <TUIGroupChatViewController.h>
-#import "YIMFoldListViewController.h"
+#import "YIMConversationFoldListViewController.h"
 #import "YIMConversationListController.h"
 #import "YIMImage.h"
 
-@interface YIMMessageViewController () <YIMConversationListControllerCustomDelegate , YIMConversationListControllerListener>
+@interface YCMessageViewController () <YIMConversationListControllerCustomDelegate , YIMConversationListControllerListener>
 
 @end
 
-@implementation YIMMessageViewController
+@implementation YCMessageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -118,7 +118,7 @@
 
         [TUIConversationListDataProvider cacheConversationFoldListSettings_FoldItemIsUnread:NO];
         
-        YIMFoldListViewController *foldVC = [[YIMFoldListViewController alloc] init];
+        YIMConversationFoldListViewController *foldVC = [[YIMConversationFoldListViewController alloc] init];
         [self.navigationController pushViewController:foldVC animated:YES];
 
         foldVC.dismissCallback = ^(NSMutableAttributedString * _Nonnull foldStr, NSArray * _Nonnull sortArr , NSArray * _Nonnull needRemoveFromCacheMapArray) {

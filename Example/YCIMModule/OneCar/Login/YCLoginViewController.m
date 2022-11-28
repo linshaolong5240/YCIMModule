@@ -1,23 +1,23 @@
 //
-//  TIMLoginViewController.m
+//  YCLoginViewController.m
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMLoginViewController.h"
+#import "YCLoginViewController.h"
 #import <Masonry/Masonry.h>
 #import "YIMManager.h"
 
-@interface TIMLoginViewController ()
+@interface YCLoginViewController ()
 
 @property(nonatomic, strong) UITextField *userIdField;
 @property(nonatomic, strong) UIButton *loginButton;
 
 @end
 
-@implementation TIMLoginViewController
+@implementation YCLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

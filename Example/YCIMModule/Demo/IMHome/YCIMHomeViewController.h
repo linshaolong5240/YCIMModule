@@ -1,5 +1,5 @@
 //
-//  YIMHomeViewController.h
+//  YCIMHomeViewController.h
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/17.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YIMHomeViewController : YIMBaseViewController
+@interface YCIMHomeViewController : YIMBaseViewController
 
 @end
 
