@@ -19,9 +19,9 @@
 	<key>chat_custom_evaluation_message_desc_color</key>
 	<string>#000000</string>
 	<key>chat_controller_bg_color</key>
-	<string>#FFFFFF</string>
+	<string>#F1F2F4</string>
 	<key>chat_input_controller_bg_color</key>
-	<string>#EBF0F6</string>
+	<string>#F7F8FB</string>
 	<key>chat_input_bg_color</key>
 	<string>#FFFFFF</string>
 	<key>chat_input_text_color</key>
@@ -126,5 +126,13 @@
 	<string>#999999</string>
 	<key>chat_messageReplyIcon_img</key>
 	<string>messageReplyIcon</string>
+	<key>chat_ToolViewInputVoice_img</key>
+	<string>ToolViewInputVoice</string>
+	<key>chat_ToolViewInputVoiceHL_img</key>
+	<string>ToolViewInputVoiceHL</string>
+	<key>chat_TypeSelectorBtn_Black_img</key>
+	<string>TypeSelectorBtn_Black</string>
+	<key>chat_TypeSelectorBtnHL_Black_img</key>
+	<string>TypeSelectorBtnHL_Black</string>
 </dict>
 </plist>
