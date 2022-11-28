@@ -23,7 +23,7 @@
 #import "YCContactViewController.h"
 #import "YCFriendDynamicsViewController.h"
 #import "YIMPopMenuView.h"
-#import "TIMPopCell.h"
+#import "YIMPopCell.h"
 #import "TUIThemeManager.h"
 
 typedef NS_ENUM(NSUInteger, TIMHomeItem) {
@@ -151,17 +151,17 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
         case TIMHomeItemMessage:
         {
             NSMutableArray *menus = [NSMutableArray array];
-            TIMPopMenuCellData *friend = [[TIMPopMenuCellData alloc] init];
+            YIMPopMenuCellData *friend = [[YIMPopMenuCellData alloc] init];
             friend.image = TUIDemoDynamicImage(@"pop_icon_new_chat_img", [UIImage imageNamed:TUIDemoImagePath(@"new_chat")]);
             friend.title = @"新会话";
             [menus addObject:friend];
             
-            TIMPopMenuCellData *group = [[TIMPopMenuCellData alloc] init];
+            YIMPopMenuCellData *group = [[YIMPopMenuCellData alloc] init];
             group.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             group.title = @"新群聊";
             [menus addObject:group];
             
-            CGFloat height = [TIMPopCell getHeight] * menus.count + TPopView_Arrow_Size.height;
+            CGFloat height = [YIMPopCell getHeight] * menus.count + TPopView_Arrow_Size.height;
             CGFloat orginY = StatusBar_Height + NavBar_Height;
             YIMPopMenuView *popView = [[YIMPopMenuView alloc] initWithFrame:CGRectMake(Screen_Width - 155, orginY, 145, height)];
             CGRect frameInNaviView = [self.navigationController.view convertRect:button.frame fromView:button.superview];
@@ -174,27 +174,27 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
         case TIMHomeItemContact:
         {
             NSMutableArray *menus = [NSMutableArray array];
-            TIMPopMenuCellData *addFriend = [[TIMPopMenuCellData alloc] init];
+            YIMPopMenuCellData *addFriend = [[YIMPopMenuCellData alloc] init];
             addFriend.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             addFriend.title = @"添加好友";
             [menus addObject:addFriend];
             
-            TIMPopMenuCellData *scan = [[TIMPopMenuCellData alloc] init];
+            YIMPopMenuCellData *scan = [[YIMPopMenuCellData alloc] init];
             scan.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             scan.title = @"扫一扫";
             [menus addObject:scan];
             
-            TIMPopMenuCellData *myQRCode = [[TIMPopMenuCellData alloc] init];
+            YIMPopMenuCellData *myQRCode = [[YIMPopMenuCellData alloc] init];
             myQRCode.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             myQRCode.title = @"我的二维码";
             [menus addObject:myQRCode];
             
-            TIMPopMenuCellData *messageSetting = [[TIMPopMenuCellData alloc] init];
+            YIMPopMenuCellData *messageSetting = [[YIMPopMenuCellData alloc] init];
             messageSetting.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             messageSetting.title = @"消息设置";
             [menus addObject:messageSetting];
             
-            CGFloat height = [TIMPopCell getHeight] * menus.count + TPopView_Arrow_Size.height;
+            CGFloat height = [YIMPopCell getHeight] * menus.count + TPopView_Arrow_Size.height;
             CGFloat orginY = StatusBar_Height + NavBar_Height;
             YIMPopMenuView *popView = [[YIMPopMenuView alloc] initWithFrame:CGRectMake(Screen_Width - 155, orginY, 145, height)];
             CGRect frameInNaviView = [self.navigationController.view convertRect:button.frame fromView:button.superview];

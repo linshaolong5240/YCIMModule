@@ -1,18 +1,18 @@
 //
-//  TIMPopCell.m
+//  YIMPopCell.m
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/22.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "TIMPopCell.h"
+#import "YIMPopCell.h"
 #import "TUIThemeManager.h"
 
-@implementation TIMPopMenuCellData
+@implementation YIMPopMenuCellData
 @end
 
-@implementation TIMPopCell
+@implementation YIMPopCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -51,7 +51,7 @@
     self.title.center = CGPointMake(self.title.center.x, self.contentView.center.y);
 }
 
-- (void)setData:(TIMPopMenuCellData *)data
+- (void)setData:(YIMPopMenuCellData *)data
 {
     _image.image = data.image;
     _title.text = data.title;

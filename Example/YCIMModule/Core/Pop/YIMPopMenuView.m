@@ -7,7 +7,7 @@
 //
 
 #import "YIMPopMenuView.h"
-#import "TIMPopCell.h"
+#import "YIMPopCell.h"
 #import <TUIThemeManager.h>
 #import <UIColor+TUIHexColor.h>
 
@@ -70,14 +70,14 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [TIMPopCell getHeight];
+    return [YIMPopCell getHeight];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TIMPopCell *cell = [tableView dequeueReusableCellWithIdentifier:TPopCell_ReuseId];
+    YIMPopCell *cell = [tableView dequeueReusableCellWithIdentifier:TPopCell_ReuseId];
     if(!cell){
-        cell = [[TIMPopCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TPopCell_ReuseId];
+        cell = [[YIMPopCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TPopCell_ReuseId];
     }
     [cell setData:_data[indexPath.row]];
     if(indexPath.row == _data.count - 1){
