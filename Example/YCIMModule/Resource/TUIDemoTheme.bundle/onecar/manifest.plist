@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>id</key>
-	<string>yim</string>
+	<string>onecar</string>
 	<key>name</key>
-	<string>yim</string>
+	<string>OneCar</string>
 	<key>name_en</key>
-	<string>YIM</string>
+	<string>OneCar</string>
 	<key>logo_bg</key>
 	<string>logo_bg.png</string>
 	<key>login_logo</key>
