@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		183C5A1F29360ED600D27DF8 /* YIMC2CChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C5A1E29360ED600D27DF8 /* YIMC2CChatViewController.m */; };
+		183C5A23293611C800D27DF8 /* TUIChatDataProvider+YIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C5A22293611C800D27DF8 /* TUIChatDataProvider+YIM.m */; };
 		18457C5E292E026100C34991 /* YCIMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C2F292E026000C34991 /* YCIMHomeViewController.m */; };
 		18457C60292E026100C34991 /* YCTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C34292E026000C34991 /* YCTabbarController.m */; };
 		18457C61292E026100C34991 /* YCContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C36292E026000C34991 /* YCContactViewController.m */; };
@@ -65,6 +66,8 @@
 		11DF042EB01A993A9333AD2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		183C5A1D29360ED600D27DF8 /* YIMC2CChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMC2CChatViewController.h; sourceTree = "<group>"; };
 		183C5A1E29360ED600D27DF8 /* YIMC2CChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMC2CChatViewController.m; sourceTree = "<group>"; };
+		183C5A21293611C800D27DF8 /* TUIChatDataProvider+YIM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TUIChatDataProvider+YIM.h"; sourceTree = "<group>"; };
+		183C5A22293611C800D27DF8 /* TUIChatDataProvider+YIM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TUIChatDataProvider+YIM.m"; sourceTree = "<group>"; };
 		18457C2E292E026000C34991 /* YCIMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIMHomeViewController.h; sourceTree = "<group>"; };
 		18457C2F292E026000C34991 /* YCIMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIMHomeViewController.m; sourceTree = "<group>"; };
 		18457C33292E026000C34991 /* YCTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabbarController.h; sourceTree = "<group>"; };
@@ -166,10 +169,20 @@
 		183C5A1C29360EAA00D27DF8 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				183C5A20293611A600D27DF8 /* Category */,
 				183C5A1D29360ED600D27DF8 /* YIMC2CChatViewController.h */,
 				183C5A1E29360ED600D27DF8 /* YIMC2CChatViewController.m */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		183C5A20293611A600D27DF8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				183C5A21293611C800D27DF8 /* TUIChatDataProvider+YIM.h */,
+				183C5A22293611C800D27DF8 /* TUIChatDataProvider+YIM.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		18457C2C292E026000C34991 /* OneCar */ = {
@@ -695,6 +708,7 @@
 				18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */,
 				1891139A2934E09C008B4D7F /* YCTemporaryConversationViewController.m in Sources */,
 				189113972934B98D008B4D7F /* YCCreateShareLocationViewController.m in Sources */,
+				183C5A23293611C800D27DF8 /* TUIChatDataProvider+YIM.m in Sources */,
 				18457C61292E026100C34991 /* YCContactViewController.m in Sources */,
 				18457C60292E026100C34991 /* YCTabbarController.m in Sources */,
 				18457C6A292E026100C34991 /* YIMConversationFoldListViewController.m in Sources */,

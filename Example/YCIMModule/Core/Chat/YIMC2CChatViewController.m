@@ -17,7 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.moreMenus = [NSArray array];
+}
+
+- (void)setConversationData:(TUIChatConversationModel *)conversationData {
+    [super setConversationData:conversationData];
+    self.moreMenus = @[];
 }
 
 @end
