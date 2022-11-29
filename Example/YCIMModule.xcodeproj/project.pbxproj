@@ -28,6 +28,8 @@
 		18457C71292E026100C34991 /* TUIDemoTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C5A292E026100C34991 /* TUIDemoTheme.bundle */; };
 		18457C72292E026100C34991 /* YCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C5C292E026100C34991 /* YCLoginViewController.m */; };
 		189113922934B66F008B4D7F /* YCServiceNotifacationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189113912934B66F008B4D7F /* YCServiceNotifacationViewController.m */; };
+		189113972934B98D008B4D7F /* YCCreateShareLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189113962934B98D008B4D7F /* YCCreateShareLocationViewController.m */; };
+		1891139A2934E09C008B4D7F /* YCTemporaryConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189113992934E09C008B4D7F /* YCTemporaryConversationViewController.m */; };
 		18C49846292F00FA00574E1B /* YIMContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C49845292F00FA00574E1B /* YIMContactController.m */; };
 		18F9EAEF2930BF9300BF43FC /* TUIContactCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAEE2930BF9300BF43FC /* TUIContactCustomTheme.bundle */; };
 		39180815620D7B24ADDC7E08 /* Pods_YCIMModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E6AF0FA224F91138D3827D /* Pods_YCIMModule_Tests.framework */; };
@@ -98,6 +100,10 @@
 		18457C73292E044800C34991 /* YCIMModule_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YCIMModule_Example.entitlements; sourceTree = "<group>"; };
 		189113902934B66F008B4D7F /* YCServiceNotifacationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCServiceNotifacationViewController.h; sourceTree = "<group>"; };
 		189113912934B66F008B4D7F /* YCServiceNotifacationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCServiceNotifacationViewController.m; sourceTree = "<group>"; };
+		189113952934B98D008B4D7F /* YCCreateShareLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCCreateShareLocationViewController.h; sourceTree = "<group>"; };
+		189113962934B98D008B4D7F /* YCCreateShareLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCCreateShareLocationViewController.m; sourceTree = "<group>"; };
+		189113982934E09C008B4D7F /* YCTemporaryConversationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCTemporaryConversationViewController.h; sourceTree = "<group>"; };
+		189113992934E09C008B4D7F /* YCTemporaryConversationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCTemporaryConversationViewController.m; sourceTree = "<group>"; };
 		18C49844292F00FA00574E1B /* YIMContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMContactController.h; sourceTree = "<group>"; };
 		18C49845292F00FA00574E1B /* YIMContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMContactController.m; sourceTree = "<group>"; };
 		18F9EAEE2930BF9300BF43FC /* TUIContactCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIContactCustomTheme.bundle; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		18457C2C292E026000C34991 /* OneCar */ = {
 			isa = PBXGroup;
 			children = (
+				189113932934B962008B4D7F /* Controller */,
 				189113892934A311008B4D7F /* Base */,
 				189113872934A22B008B4D7F /* Chat */,
 				18457C35292E026000C34991 /* Contact */,
@@ -323,6 +330,17 @@
 				18457C4A292E026100C34991 /* YIMBaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		189113932934B962008B4D7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				189113952934B98D008B4D7F /* YCCreateShareLocationViewController.h */,
+				189113962934B98D008B4D7F /* YCCreateShareLocationViewController.m */,
+				189113982934E09C008B4D7F /* YCTemporaryConversationViewController.h */,
+				189113992934E09C008B4D7F /* YCTemporaryConversationViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		18C49843292F00C200574E1B /* Contact */ = {
@@ -661,6 +679,8 @@
 				18457C68292E026100C34991 /* YIMBaseViewController.m in Sources */,
 				18457C72292E026100C34991 /* YCLoginViewController.m in Sources */,
 				18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */,
+				1891139A2934E09C008B4D7F /* YCTemporaryConversationViewController.m in Sources */,
+				189113972934B98D008B4D7F /* YCCreateShareLocationViewController.m in Sources */,
 				18457C61292E026100C34991 /* YCContactViewController.m in Sources */,
 				18457C60292E026100C34991 /* YCTabbarController.m in Sources */,
 				18457C6A292E026100C34991 /* YIMConversationFoldListViewController.m in Sources */,

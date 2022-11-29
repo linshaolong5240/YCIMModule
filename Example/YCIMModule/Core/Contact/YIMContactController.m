@@ -40,14 +40,14 @@
         TUIContactActionCellData *data = [[TUIContactActionCellData alloc] init];
         data.icon = [YIMImage imageNamed:@"avatar_share_location"];//TUIContactDynamicImage(@"contact_new_friend_img", [UIImage imageNamed:TUIContactImagePath(@"new_friend")]);
         data.title = @"创建共享位置";//TUIKitLocalizableString(TUIKitContactsNewFriends);
-        data.cselector = @selector(onAddNewFriend:);
+        data.cselector = @selector(onShareLocation:);
         data;
     })];
     [list addObject:({
         TUIContactActionCellData *data = [[TUIContactActionCellData alloc] init];
         data.icon = [YIMImage imageNamed:@"avatar_temporary_conversation"];//TUIContactDynamicImage(@"contact_new_friend_img", [UIImage imageNamed:TUIContactImagePath(@"new_friend")]);
         data.title = @"临时会话车友";//TUIKitLocalizableString(TUIKitContactsNewFriends);
-        data.cselector = @selector(onAddNewFriend:);
+        data.cselector = @selector(onTemporaryConversation:);
         data;
     })];
     [list addObject:({
@@ -236,6 +236,18 @@
 {
     if (self.delegate && [self.delegate respondsToSelector:@selector(onGroupConversation:)]) {
         [self.delegate onGroupConversation:cell];
+    }
+}
+
+- (void)onShareLocation:(TUICommonTableViewCell *)cell {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(onGroupConversation:)]) {
+        [self.delegate onShareLocation:cell];
+    }
+}
+
+- (void)onTemporaryConversation:(TUICommonTableViewCell *)cell {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(onGroupConversation:)]) {
+        [self.delegate onTemporaryConversation:cell];
     }
 }
 

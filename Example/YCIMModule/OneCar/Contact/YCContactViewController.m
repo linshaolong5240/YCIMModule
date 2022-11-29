@@ -10,16 +10,19 @@
 #import "YIMContactController.h"
 #import <TUIFriendProfileController.h>
 #import <TUINewFriendViewController.h>
-#import "TUIUserProfileController.h"
-#import "TUIGroupConversationListController.h"
-#import "TUIGroupChatViewController.h"
+#import <TUIUserProfileController.h>
+#import <TUIGroupConversationListController.h>
+#import <TUIGroupChatViewController.h>
 
+#import "YIMImage.h"
 #import "YIMManager.h"
+#import "YCCreateShareLocationViewController.h"
+#import "YCTemporaryConversationViewController.h"
 
 @interface YCContactViewController () <YIMContactControllerListener>
 
-@property (nonatomic, strong) TUINaviBarIndicatorView *titleView;
-@property (nonatomic, strong) YIMContactController *contactVC;
+@property(nonatomic, strong) TUINaviBarIndicatorView *titleView;
+@property(nonatomic, strong) YIMContactController *contactVC;
 
 @end
 
@@ -28,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
     _titleView = [[TUINaviBarIndicatorView alloc] init];
     [_titleView setTitle:@"联系人"];
     self.navigationItem.titleView = _titleView;
@@ -75,6 +79,16 @@
         chatVc.conversationData = data;
         [self.navigationController pushViewController:chatVc animated:YES];
     };
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)onShareLocation:(TUICommonTableViewCell *)cell {
+    YCCreateShareLocationViewController *vc = [[YCCreateShareLocationViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)onTemporaryConversation:(TUICommonTableViewCell *)cell {
+    YCTemporaryConversationViewController *vc = [[YCTemporaryConversationViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

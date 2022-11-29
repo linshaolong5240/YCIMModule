@@ -11,26 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol YIMContactFirstGroupDelegate <NSObject>
-
-@required
-
-- (NSInteger)numberOfRowsInFirstGroup;
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForFirstGroupAtIndexPath:(NSIndexPath *)indexPath;
-
-@optional
-
-
-
-
-@end
-
 @protocol YIMContactControllerListener <NSObject>
 @optional
 - (void)onSelectFriend:(TUICommonContactCell *)cell;
 - (void)onAddNewFriend:(TUICommonTableViewCell *)cell;
 - (void)onGroupConversation:(TUICommonTableViewCell *)cell;
+- (void)onShareLocation:(TUICommonTableViewCell *)cell;
+- (void)onTemporaryConversation:(TUICommonTableViewCell *)cell;
 @end
 
 
