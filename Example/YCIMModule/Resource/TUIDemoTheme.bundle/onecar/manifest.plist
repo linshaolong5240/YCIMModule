@@ -37,9 +37,9 @@
 	<key>tab_bg_color</key>
 	<string>#EBF0F6</string>
 	<key>pop_bg_color</key>
-	<string>#FFFFFF</string>
+	<string>#333333</string>
 	<key>pop_text_color</key>
-	<string>#444444</string>
+	<string>#FFFFFF</string>
 	<key>login_content_bg_color</key>
 	<string>#FFFFFF</string>
 	<key>login_form_title_color</key>

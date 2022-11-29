@@ -9,14 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @class YIMPopMenuView;
-@protocol TIMPopViewDelegate <NSObject>
+@protocol YIMPopViewDelegate <NSObject>
 - (void)popView:(YIMPopMenuView *)popView didSelectRowAtIndex:(NSInteger)index;
 @end
 
 @interface YIMPopMenuView : UIView
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) CGPoint arrowPoint;
-@property (nonatomic, weak) id<TIMPopViewDelegate> delegate;
+@property (nonatomic, weak) id<YIMPopViewDelegate> delegate;
 - (void)setData:(NSMutableArray *)data;
 - (void)showInWindow:(UIWindow *)window;
 @end

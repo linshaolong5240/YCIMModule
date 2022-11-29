@@ -19,6 +19,7 @@
 #import <TUIGroupService.h>
 #import <TUIGroupChatViewController.h>
 
+#import "YIMImage.h"
 #import "YCMessageViewController.h"
 #import "YCContactViewController.h"
 #import "YCFriendDynamicsViewController.h"
@@ -46,7 +47,7 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
     }
 }
 
-@interface YCIMHomeViewController () <JXCategoryViewDelegate, JXCategoryListContainerViewDelegate, TIMPopViewDelegate>
+@interface YCIMHomeViewController () <JXCategoryViewDelegate, JXCategoryListContainerViewDelegate, YIMPopViewDelegate>
 
 @property(nonatomic, copy) NSArray<NSString *> *categories;
 @property(nonatomic, strong) JXCategoryTitleView *categoryView;
@@ -175,22 +176,22 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
         {
             NSMutableArray *menus = [NSMutableArray array];
             YIMPopMenuCellData *addFriend = [[YIMPopMenuCellData alloc] init];
-            addFriend.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
+            addFriend.image = [YIMImage imageNamed:@"pop_icon_add_friend"];//TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             addFriend.title = @"添加好友";
             [menus addObject:addFriend];
             
             YIMPopMenuCellData *scan = [[YIMPopMenuCellData alloc] init];
-            scan.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
+            scan.image = [YIMImage imageNamed:@"pop_icon_scan"];//TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             scan.title = @"扫一扫";
             [menus addObject:scan];
             
             YIMPopMenuCellData *myQRCode = [[YIMPopMenuCellData alloc] init];
-            myQRCode.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
+            myQRCode.image = [YIMImage imageNamed:@"pop_icon_my_qrcode"];//TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             myQRCode.title = @"我的二维码";
             [menus addObject:myQRCode];
             
             YIMPopMenuCellData *messageSetting = [[YIMPopMenuCellData alloc] init];
-            messageSetting.image = TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
+            messageSetting.image = [YIMImage imageNamed:@"pop_icon_message_setting"];//TUIDemoDynamicImage(@"pop_icon_new_group_img", [UIImage imageNamed:TUIDemoImagePath(@"new_groupchat")]);
             messageSetting.title = @"消息设置";
             [menus addObject:messageSetting];
             
