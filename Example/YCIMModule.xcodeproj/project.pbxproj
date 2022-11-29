@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183C5A1F29360ED600D27DF8 /* YIMC2CChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C5A1E29360ED600D27DF8 /* YIMC2CChatViewController.m */; };
 		18457C5E292E026100C34991 /* YCIMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C2F292E026000C34991 /* YCIMHomeViewController.m */; };
 		18457C60292E026100C34991 /* YCTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C34292E026000C34991 /* YCTabbarController.m */; };
 		18457C61292E026100C34991 /* YCContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C36292E026000C34991 /* YCContactViewController.m */; };
@@ -62,6 +63,8 @@
 /* Begin PBXFileReference section */
 		0BEF27B23A0B4CA0340E2398 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		11DF042EB01A993A9333AD2E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		183C5A1D29360ED600D27DF8 /* YIMC2CChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMC2CChatViewController.h; sourceTree = "<group>"; };
+		183C5A1E29360ED600D27DF8 /* YIMC2CChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMC2CChatViewController.m; sourceTree = "<group>"; };
 		18457C2E292E026000C34991 /* YCIMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIMHomeViewController.h; sourceTree = "<group>"; };
 		18457C2F292E026000C34991 /* YCIMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIMHomeViewController.m; sourceTree = "<group>"; };
 		18457C33292E026000C34991 /* YCTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabbarController.h; sourceTree = "<group>"; };
@@ -160,6 +163,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		183C5A1C29360EAA00D27DF8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				183C5A1D29360ED600D27DF8 /* YIMC2CChatViewController.h */,
+				183C5A1E29360ED600D27DF8 /* YIMC2CChatViewController.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		18457C2C292E026000C34991 /* OneCar */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,13 +217,14 @@
 			isa = PBXGroup;
 			children = (
 				18457C46292E026100C34991 /* Base */,
+				183C5A1C29360EAA00D27DF8 /* Chat */,
 				18C49843292F00C200574E1B /* Contact */,
 				18457C74292E075600C34991 /* Conversation */,
 				18457C41292E026100C34991 /* Extension */,
 				18457C39292E026100C34991 /* Pop */,
-				18457C3E292E026100C34991 /* YIMManager */,
 				18457C44292E026100C34991 /* YIMImage.h */,
 				18457C45292E026100C34991 /* YIMImage.m */,
+				18457C3E292E026100C34991 /* YIMManager */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -673,6 +686,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18457C65292E026100C34991 /* UIButton+YIM.m in Sources */,
+				183C5A1F29360ED600D27DF8 /* YIMC2CChatViewController.m in Sources */,
 				18457C69292E026100C34991 /* YIMConversationListController.m in Sources */,
 				18457C63292E026100C34991 /* YIMPopCell.m in Sources */,
 				18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */,

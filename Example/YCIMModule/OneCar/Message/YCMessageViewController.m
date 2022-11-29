@@ -11,6 +11,8 @@
 #import <TUIChat.h>
 #import <TUIC2CChatViewController.h>
 #import <TUIGroupChatViewController.h>
+
+#import "YIMC2CChatViewController.h"
 #import "YIMConversationFoldListViewController.h"
 #import "YIMConversationListController.h"
 #import "YCServiceNotifacationViewController.h"
@@ -58,7 +60,7 @@
 - (TUIBaseChatViewController *)getChatViewController:(TUIChatConversationModel *)model {
     TUIBaseChatViewController *chat = nil;
     if (model.userID.length > 0) {
-        chat = [[TUIC2CChatViewController alloc] init];
+        chat = [[YIMC2CChatViewController alloc] init];
     } else if (model.groupID.length > 0) {
         chat = [[TUIGroupChatViewController alloc] init];
     }
