@@ -5,11 +5,11 @@
 //  Created by Sauron on 2022/11/17.
 //
 
-#import "YIMBaseViewController.h"
+#import "YCBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YCIMHomeViewController : YIMBaseViewController
+@interface YCIMHomeViewController : YCBaseViewController
 
 @end
 

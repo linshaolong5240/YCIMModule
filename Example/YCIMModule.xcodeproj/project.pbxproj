@@ -18,7 +18,7 @@
 		18457C65292E026100C34991 /* UIButton+YIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C43292E026100C34991 /* UIButton+YIM.m */; };
 		18457C66292E026100C34991 /* YIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C45292E026100C34991 /* YIMImage.m */; };
 		18457C67292E026100C34991 /* YIMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C49292E026100C34991 /* YIMNavigationController.m */; };
-		18457C68292E026100C34991 /* YIMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* YIMBaseViewController.m */; };
+		18457C68292E026100C34991 /* YCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* YCBaseViewController.m */; };
 		18457C69292E026100C34991 /* YIMConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4C292E026100C34991 /* YIMConversationListController.m */; };
 		18457C6A292E026100C34991 /* YIMConversationFoldListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4D292E026100C34991 /* YIMConversationFoldListViewController.m */; };
 		18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4E292E026100C34991 /* YCMessageViewController.m */; };
@@ -84,10 +84,10 @@
 		18457C43292E026100C34991 /* UIButton+YIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YIM.m"; sourceTree = "<group>"; };
 		18457C44292E026100C34991 /* YIMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMImage.h; sourceTree = "<group>"; };
 		18457C45292E026100C34991 /* YIMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMImage.m; sourceTree = "<group>"; };
-		18457C47292E026100C34991 /* YIMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMBaseViewController.h; sourceTree = "<group>"; };
+		18457C47292E026100C34991 /* YCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCBaseViewController.h; sourceTree = "<group>"; };
 		18457C48292E026100C34991 /* YIMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMNavigationController.h; sourceTree = "<group>"; };
 		18457C49292E026100C34991 /* YIMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMNavigationController.m; sourceTree = "<group>"; };
-		18457C4A292E026100C34991 /* YIMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMBaseViewController.m; sourceTree = "<group>"; };
+		18457C4A292E026100C34991 /* YCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCBaseViewController.m; sourceTree = "<group>"; };
 		18457C4C292E026100C34991 /* YIMConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMConversationListController.m; sourceTree = "<group>"; };
 		18457C4D292E026100C34991 /* YIMConversationFoldListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMConversationFoldListViewController.m; sourceTree = "<group>"; };
 		18457C4E292E026100C34991 /* YCMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMessageViewController.m; sourceTree = "<group>"; };
@@ -352,8 +352,8 @@
 		189113892934A311008B4D7F /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				18457C47292E026100C34991 /* YIMBaseViewController.h */,
-				18457C4A292E026100C34991 /* YIMBaseViewController.m */,
+				18457C47292E026100C34991 /* YCBaseViewController.h */,
+				18457C4A292E026100C34991 /* YCBaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -703,7 +703,7 @@
 				18457C69292E026100C34991 /* YIMConversationListController.m in Sources */,
 				18457C63292E026100C34991 /* YIMPopCell.m in Sources */,
 				18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */,
-				18457C68292E026100C34991 /* YIMBaseViewController.m in Sources */,
+				18457C68292E026100C34991 /* YCBaseViewController.m in Sources */,
 				18457C72292E026100C34991 /* YCLoginViewController.m in Sources */,
 				18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */,
 				1891139A2934E09C008B4D7F /* YCTemporaryConversationViewController.m in Sources */,
