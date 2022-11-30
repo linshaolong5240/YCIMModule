@@ -2,7 +2,7 @@
 //  TUIChatDataProvider+YIM.h
 //  YCIMModule_Example
 //
-//  Created by Apple on 2022/11/29.
+//  Created by Sauron on 2022/11/29.
 //  Copyright © 2022 YRYC. All rights reserved.
 //
 

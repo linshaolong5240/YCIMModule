@@ -42,6 +42,8 @@
 	<string>chat_more_picture.png</string>
 	<key>chat_more_video_img</key>
 	<string>chat_more_video.png</string>
+	<key>chat_more_order_img</key>
+	<string>chat_more_order.png</string>
 	<key>chat_bubble_send_img</key>
 	<string>chat_bubble_send.png</string>
 	<key>chat_bubble_send_alpha20_img</key>

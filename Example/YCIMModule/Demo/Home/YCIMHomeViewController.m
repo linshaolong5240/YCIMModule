@@ -11,7 +11,7 @@
 #import <TUICommonModel.h>
 //chat
 #import <TUIChatConversationModel.h>
-#import <TUIC2CChatViewController.h>
+#import "YIMC2CChatViewController.h"
 #import <TUIGroupCreateController.h>
 //contact
 #import "TUIContactSelectController.h"
@@ -257,7 +257,7 @@ NSString *NSStringFromTIMHomeItem(TIMHomeItem item) {
             TUIChatConversationModel *data = [[TUIChatConversationModel alloc] init];
             data.userID = array.firstObject.identifier;
             data.title = array.firstObject.title;
-            TUIC2CChatViewController *chat = [[TUIC2CChatViewController alloc] init];
+            YIMC2CChatViewController *chat = [[YIMC2CChatViewController alloc] init];
             chat.conversationData = data;
             [self.navigationController pushViewController:chat animated:YES];
 

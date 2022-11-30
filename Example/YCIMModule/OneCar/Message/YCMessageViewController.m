@@ -9,7 +9,6 @@
 #import "YCMessageViewController.h"
 #import <TUIConversation.h>
 #import <TUIChat.h>
-#import <TUIC2CChatViewController.h>
 #import <TUIGroupChatViewController.h>
 
 #import "YIMC2CChatViewController.h"

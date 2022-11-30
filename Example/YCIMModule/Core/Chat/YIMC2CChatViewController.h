@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YIMC2CChatViewController : TUIC2CChatViewController
+@interface YIMC2CChatViewController : TUIBaseChatViewController
 
 @end
 
