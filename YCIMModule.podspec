@@ -30,24 +30,24 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-#  s.source_files = 'YCIMModule/Classes/**/*'
-  s.default_subspec = 'All'
-
-  s.subspec "Core" do |core|
-      core.source_files = 'YCIMModule/Classes/Core/**/*'
-      core.private_header_files = 'YCMapKitModule/Classes/Core/**/*.h'
-  end
-  
-  s.subspec "OneCar" do |onecar|
-      onecar.source_files = 'YCIMModule/Classes/OneCar/**/*'
-      onecar.private_header_files = 'YCMapKitModule/Classes/OneCar/**/*.h'
-      onecar.dependency = "YCIMModule/Core"
-  end
-  
-  s.subspec 'All' do |all|
-      all.dependency "YCIMModule/Core"
-      all.dependency "YCIMModule/OneCar"
-  end
+  s.source_files = 'YCIMModule/Classes/**/*'
+#  s.default_subspec = 'All'
+#
+#  s.subspec "Core" do |core|
+#      core.source_files = 'YCIMModule/Classes/Core/**/*'
+#      core.private_header_files = 'YCMapKitModule/Classes/Core/**/*.h'
+#  end
+#
+#  s.subspec "OneCar" do |onecar|
+#      onecar.source_files = 'YCIMModule/Classes/OneCar/**/*'
+#      onecar.private_header_files = 'YCMapKitModule/Classes/OneCar/**/*.h'
+#      onecar.dependency = "YCIMModule/Core"
+#  end
+#
+#  s.subspec 'All' do |all|
+#      all.dependency "YCIMModule/Core"
+#      all.dependency "YCIMModule/OneCar"
+#  end
 
   # s.resource_bundles = {
   #   'YCIMModule' => ['YCIMModule/Assets/*.png']
