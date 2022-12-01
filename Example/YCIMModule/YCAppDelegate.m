@@ -38,13 +38,13 @@ TUIOfflinePushCertificateIDForAPNS(36102)
     // -- 2. 给 TUIChat 组件注册自定义的主题资源包路径，用于覆盖内置的主题，note: 此时只能覆盖 TUIThemeModuleChat
 //    TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUICoreCustomTheme.bundle" ofType:nil], TUIThemeModuleCore);
 //    [TUIThemeManager.shareManager applyTheme:@"onecar" forModule:TUIThemeModuleCore];
-//    
+//
 //    TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUIConversationCustomTheme.bundle" ofType:nil], TUIThemeModuleConversation);
 //    [TUIThemeManager.shareManager applyTheme:@"onecar" forModule:TUIThemeModuleConversation];
 //
 //    TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUIChatCustomTheme.bundle" ofType:nil], TUIThemeModuleChat);
 //    [TUIThemeManager.shareManager applyTheme:@"onecar" forModule:TUIThemeModuleChat];
-//    
+//
 //    TUIRegisterThemeResourcePath([NSBundle.mainBundle pathForResource:@"TUIContactCustomTheme.bundle" ofType:nil], TUIThemeModuleContact);
 //    [TUIThemeManager.shareManager applyTheme:@"onecar" forModule:TUIThemeModuleContact];
 //

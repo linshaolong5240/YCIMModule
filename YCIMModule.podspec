@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
 #
   s.subspec "Core" do |core|
       core.source_files = 'YCIMModule/Classes/Core/**/*'
-      core.private_header_files = 'YCIMModule/Classes/Core/**/*.h'
+#      core.private_header_files = 'YCIMModule/Classes/Core/**/*.h'
       core.dependency 'Masonry', '~> 1.1.0'
       #IM
       core.dependency 'TXIMSDK_Plus_iOS', '~> 6.8.3374'
@@ -48,7 +48,7 @@ TODO: Add long description of the pod here.
 
   s.subspec "OneCar" do |onecar|
       onecar.source_files = 'YCIMModule/Classes/OneCar/**/*'
-      onecar.private_header_files = 'YCIMModule/Classes/OneCar/**/*.h'
+#      onecar.private_header_files = 'YCIMModule/Classes/OneCar/**/*.h'
       onecar.resource_bundles = {
         'YCIMModule' => ['YCIMModule/Assets/OneCar/{*.bundle,*.xcassets}']
       }
