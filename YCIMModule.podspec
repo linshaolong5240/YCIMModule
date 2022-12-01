@@ -45,21 +45,24 @@ TODO: Add long description of the pod here.
       core.dependency 'TUIGroup', '~> 6.8.3374'
       core.dependency 'TUIOfflinePush', '~> 6.8.3374'
   end
-#
-#  s.subspec "OneCar" do |onecar|
-#      onecar.source_files = 'YCIMModule/Classes/OneCar/**/*'
-#      onecar.private_header_files = 'YCMapKitModule/Classes/OneCar/**/*.h'
-#      onecar.dependency = "YCIMModule/Core"
-#  end
-#
-  s.subspec 'All' do |all|
-      all.dependency "YCIMModule/Core"
-#      all.dependency "YCIMModule/OneCar"
+
+  s.subspec "OneCar" do |onecar|
+      onecar.source_files = 'YCIMModule/Classes/OneCar/**/*'
+      onecar.private_header_files = 'YCMapKitModule/Classes/OneCar/**/*.h'
+      onecar.resource_bundles = {
+        'YCIMModule' => ['YCIMModule/Assets/OneCar/{*.bundle,*.xcassets}']
+      }
+      onecar.dependency "YCIMModule/Core"
+      onecar.dependency 'JXCategoryView', '~> 1.6.1'
   end
 
-  # s.resource_bundles = {
-  #   'YCIMModule' => ['YCIMModule/Assets/*.png']
-  # }
+  s.subspec 'All' do |all|
+      all.dependency "YCIMModule/OneCar"
+  end
+
+#   s.resource_bundles = {
+#     'YCIMModule' => ['YCIMModule/Assets/*.png']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

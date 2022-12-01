@@ -7,7 +7,7 @@
 //
 
 #import "YCTabbarController.h"
-#import "YIMNavigationController.h"
+#import <YIMNavigationController.h>
 #import "YCIMHomeViewController.h"
 
 @interface YCTabbarController ()

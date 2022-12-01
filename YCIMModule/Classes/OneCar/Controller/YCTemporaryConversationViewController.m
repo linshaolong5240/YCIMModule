@@ -7,8 +7,8 @@
 //
 
 #import "YCTemporaryConversationViewController.h"
-#import <TUICommonModel.h>
-#import <TUIThemeManager.h>
+#import "TUICommonModel.h"
+#import "TUIThemeManager.h"
 
 @interface YCTemporaryConversationViewController ()
 

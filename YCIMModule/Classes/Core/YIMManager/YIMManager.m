@@ -58,7 +58,13 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
     return shared;
 }
 
-- (void)initSDKWithAppId:(int)AppId {
+
+- (void)initSDKWithAppId:(int)AppId config:(V2TIMSDKConfig *)config {
+    [[V2TIMManager sharedInstance] addIMSDKListener:self];
+    [[V2TIMManager sharedInstance] initSDK:AppId config:config];
+}
+
+- (void)initSDKWithAppId:(int)appId {
     // 2. 初始化 config 对象
     V2TIMSDKConfig *config = [[V2TIMSDKConfig alloc] init];
     // 3. 指定 log 输出级别。
@@ -70,13 +76,8 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
         //        NSLog(@"%@", logContent);
 #endif
     };
-    [[V2TIMManager sharedInstance] addIMSDKListener:self];
-    [[V2TIMManager sharedInstance] initSDK:AppId config:config];
-}
-
-- (void)initSDKWithAppId:(int)AppId config:(V2TIMSDKConfig *)config {
-    [[V2TIMManager sharedInstance] addIMSDKListener:self];
-    [[V2TIMManager sharedInstance] initSDK:AppId config:config];
+    [self initSDKWithAppId:appId config:config];
+    [self applyTheme];
 }
 
 - (void)deInitSDK {
@@ -96,6 +97,11 @@ NSString *NSStringFromV2TIMLoginStatus(V2TIMLoginStatus status) {
     if ([self.listeners containsObject:listener]) {
         [self.listeners removeObject:listener];
     }
+}
+
+//用于覆盖
+- (void)applyTheme {
+    
 }
 
 - (V2TIMLoginStatus)getLoginStatus {

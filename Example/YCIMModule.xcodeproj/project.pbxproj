@@ -9,19 +9,6 @@
 /* Begin PBXBuildFile section */
 		18457C5E292E026100C34991 /* YCIMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C2F292E026000C34991 /* YCIMHomeViewController.m */; };
 		18457C60292E026100C34991 /* YCTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C34292E026000C34991 /* YCTabbarController.m */; };
-		18457C61292E026100C34991 /* YCContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C36292E026000C34991 /* YCContactViewController.m */; };
-		18457C68292E026100C34991 /* YCIMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* YCIMBaseViewController.m */; };
-		18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4E292E026100C34991 /* YCMessageViewController.m */; };
-		18457C6C292E026100C34991 /* YCFriendDynamicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C53292E026100C34991 /* YCFriendDynamicsViewController.m */; };
-		18457C6D292E026100C34991 /* TUIChatCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */; };
-		18457C6E292E026100C34991 /* TUIConversationCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */; };
-		18457C6F292E026100C34991 /* TUICoreCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */; };
-		18457C70292E026100C34991 /* TUIDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C59292E026100C34991 /* TUIDemo.bundle */; };
-		18457C71292E026100C34991 /* TUIDemoTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18457C5A292E026100C34991 /* TUIDemoTheme.bundle */; };
-		189113922934B66F008B4D7F /* YCServiceNotifacationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189113912934B66F008B4D7F /* YCServiceNotifacationViewController.m */; };
-		189113972934B98D008B4D7F /* YCCreateShareLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189113962934B98D008B4D7F /* YCCreateShareLocationViewController.m */; };
-		1891139A2934E09C008B4D7F /* YCTemporaryConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189113992934E09C008B4D7F /* YCTemporaryConversationViewController.m */; };
-		18F9EAEF2930BF9300BF43FC /* TUIContactCustomTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18F9EAEE2930BF9300BF43FC /* TUIContactCustomTheme.bundle */; };
 		39180815620D7B24ADDC7E08 /* Pods_YCIMModule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E6AF0FA224F91138D3827D /* Pods_YCIMModule_Tests.framework */; };
 		3E0109E638764E67CA60AD94 /* Pods_YCIMModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24B4681AD8EACF4B32A77B0 /* Pods_YCIMModule_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -56,27 +43,7 @@
 		18457C2F292E026000C34991 /* YCIMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIMHomeViewController.m; sourceTree = "<group>"; };
 		18457C33292E026000C34991 /* YCTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCTabbarController.h; sourceTree = "<group>"; };
 		18457C34292E026000C34991 /* YCTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCTabbarController.m; sourceTree = "<group>"; };
-		18457C36292E026000C34991 /* YCContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCContactViewController.m; sourceTree = "<group>"; };
-		18457C37292E026000C34991 /* YCContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCContactViewController.h; sourceTree = "<group>"; };
-		18457C47292E026100C34991 /* YCIMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIMBaseViewController.h; sourceTree = "<group>"; };
-		18457C4A292E026100C34991 /* YCIMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIMBaseViewController.m; sourceTree = "<group>"; };
-		18457C4E292E026100C34991 /* YCMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMessageViewController.m; sourceTree = "<group>"; };
-		18457C50292E026100C34991 /* YCMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMessageViewController.h; sourceTree = "<group>"; };
-		18457C53292E026100C34991 /* YCFriendDynamicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCFriendDynamicsViewController.m; sourceTree = "<group>"; };
-		18457C54292E026100C34991 /* YCFriendDynamicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCFriendDynamicsViewController.h; sourceTree = "<group>"; };
-		18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIChatCustomTheme.bundle; sourceTree = "<group>"; };
-		18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIConversationCustomTheme.bundle; sourceTree = "<group>"; };
-		18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUICoreCustomTheme.bundle; sourceTree = "<group>"; };
-		18457C59292E026100C34991 /* TUIDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIDemo.bundle; sourceTree = "<group>"; };
-		18457C5A292E026100C34991 /* TUIDemoTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIDemoTheme.bundle; sourceTree = "<group>"; };
 		18457C73292E044800C34991 /* YCIMModule_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YCIMModule_Example.entitlements; sourceTree = "<group>"; };
-		189113902934B66F008B4D7F /* YCServiceNotifacationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCServiceNotifacationViewController.h; sourceTree = "<group>"; };
-		189113912934B66F008B4D7F /* YCServiceNotifacationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCServiceNotifacationViewController.m; sourceTree = "<group>"; };
-		189113952934B98D008B4D7F /* YCCreateShareLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCCreateShareLocationViewController.h; sourceTree = "<group>"; };
-		189113962934B98D008B4D7F /* YCCreateShareLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCCreateShareLocationViewController.m; sourceTree = "<group>"; };
-		189113982934E09C008B4D7F /* YCTemporaryConversationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCTemporaryConversationViewController.h; sourceTree = "<group>"; };
-		189113992934E09C008B4D7F /* YCTemporaryConversationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCTemporaryConversationViewController.m; sourceTree = "<group>"; };
-		18F9EAEE2930BF9300BF43FC /* TUIContactCustomTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TUIContactCustomTheme.bundle; sourceTree = "<group>"; };
 		372E9D467C0B246A9C31135D /* Pods-YCIMModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCIMModule_Example.debug.xcconfig"; path = "Target Support Files/Pods-YCIMModule_Example/Pods-YCIMModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5EBEFEB10143A18532EDDAEE /* Pods-YCIMModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCIMModule_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YCIMModule_Tests/Pods-YCIMModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YCIMModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCIMModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,20 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18457C2C292E026000C34991 /* OneCar */ = {
-			isa = PBXGroup;
-			children = (
-				189113892934A311008B4D7F /* Base */,
-				189113872934A22B008B4D7F /* Chat */,
-				18457C35292E026000C34991 /* Contact */,
-				189113932934B962008B4D7F /* Controller */,
-				18457C52292E026100C34991 /* FriendDynamics */,
-				18457C4B292E026100C34991 /* Message */,
-				18457C55292E026100C34991 /* Resource */,
-			);
-			path = OneCar;
-			sourceTree = "<group>";
-		};
 		18457C2D292E026000C34991 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,46 +115,6 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		18457C35292E026000C34991 /* Contact */ = {
-			isa = PBXGroup;
-			children = (
-				18457C37292E026000C34991 /* YCContactViewController.h */,
-				18457C36292E026000C34991 /* YCContactViewController.m */,
-			);
-			path = Contact;
-			sourceTree = "<group>";
-		};
-		18457C4B292E026100C34991 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				18457C50292E026100C34991 /* YCMessageViewController.h */,
-				18457C4E292E026100C34991 /* YCMessageViewController.m */,
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		18457C52292E026100C34991 /* FriendDynamics */ = {
-			isa = PBXGroup;
-			children = (
-				18457C54292E026100C34991 /* YCFriendDynamicsViewController.h */,
-				18457C53292E026100C34991 /* YCFriendDynamicsViewController.m */,
-			);
-			path = FriendDynamics;
-			sourceTree = "<group>";
-		};
-		18457C55292E026100C34991 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				18F9EAEE2930BF9300BF43FC /* TUIContactCustomTheme.bundle */,
-				18457C56292E026100C34991 /* TUIChatCustomTheme.bundle */,
-				18457C57292E026100C34991 /* TUIConversationCustomTheme.bundle */,
-				18457C58292E026100C34991 /* TUICoreCustomTheme.bundle */,
-				18457C59292E026100C34991 /* TUIDemo.bundle */,
-				18457C5A292E026100C34991 /* TUIDemoTheme.bundle */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		1891138629349EC7008B4D7F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,35 +122,6 @@
 				18457C32292E026000C34991 /* Navigation */,
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		189113872934A22B008B4D7F /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				189113902934B66F008B4D7F /* YCServiceNotifacationViewController.h */,
-				189113912934B66F008B4D7F /* YCServiceNotifacationViewController.m */,
-			);
-			path = Chat;
-			sourceTree = "<group>";
-		};
-		189113892934A311008B4D7F /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				18457C47292E026100C34991 /* YCIMBaseViewController.h */,
-				18457C4A292E026100C34991 /* YCIMBaseViewController.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		189113932934B962008B4D7F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				189113952934B98D008B4D7F /* YCCreateShareLocationViewController.h */,
-				189113962934B98D008B4D7F /* YCCreateShareLocationViewController.m */,
-				189113982934E09C008B4D7F /* YCTemporaryConversationViewController.h */,
-				189113992934E09C008B4D7F /* YCTemporaryConversationViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		41A0FF210E87F34F46CD2CCA /* Pods */ = {
@@ -290,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				1891138629349EC7008B4D7F /* Demo */,
-				18457C2C292E026000C34991 /* OneCar */,
 				6003F59C195388D20070C39A /* YCAppDelegate.h */,
 				6003F59D195388D20070C39A /* YCAppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -426,13 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18457C6F292E026100C34991 /* TUICoreCustomTheme.bundle in Resources */,
-				18457C70292E026100C34991 /* TUIDemo.bundle in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				18457C6D292E026100C34991 /* TUIChatCustomTheme.bundle in Resources */,
-				18F9EAEF2930BF9300BF43FC /* TUIContactCustomTheme.bundle in Resources */,
-				18457C6E292E026100C34991 /* TUIConversationCustomTheme.bundle in Resources */,
-				18457C71292E026100C34991 /* TUIDemoTheme.bundle in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -512,6 +389,7 @@
 				"${PODS_ROOT}/TUICore/TUICore/Resources/TUIKitLocalizable.bundle",
 				"${PODS_ROOT}/TUIGroup/TUIGroup/Resources/TUIGroup.bundle",
 				"${PODS_ROOT}/TUIGroup/TUIGroup/Resources/TUIGroupTheme.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/YCIMModule/YCIMModule.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -527,6 +405,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIKitLocalizable.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIGroup.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIGroupTheme.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YCIMModule.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -558,17 +437,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */,
-				18457C68292E026100C34991 /* YCIMBaseViewController.m in Sources */,
-				1891139A2934E09C008B4D7F /* YCTemporaryConversationViewController.m in Sources */,
-				189113972934B98D008B4D7F /* YCCreateShareLocationViewController.m in Sources */,
-				18457C61292E026100C34991 /* YCContactViewController.m in Sources */,
 				18457C60292E026100C34991 /* YCTabbarController.m in Sources */,
 				18457C5E292E026100C34991 /* YCIMHomeViewController.m in Sources */,
 				6003F59E195388D20070C39A /* YCAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				189113922934B66F008B4D7F /* YCServiceNotifacationViewController.m in Sources */,
-				18457C6C292E026100C34991 /* YCFriendDynamicsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,15 +5,7 @@ platform :ios, '10.0'
 target 'YCIMModule_Example' do
   pod 'YCIMModule', :path => '../'
   
-  pod 'JXCategoryView', '~> 1.6.1'
   pod 'Masonry', '~> 1.1.0'
-  #IM
-  pod 'TXIMSDK_Plus_iOS', '~> 6.8.3374'
-  pod 'TUIConversation', '~> 6.8.3374'
-  pod 'TUIChat', '~> 6.8.3374'
-  pod 'TUIContact', '~> 6.8.3374'
-  pod 'TUIGroup', '~> 6.8.3374'
-  pod 'TUIOfflinePush', '~> 6.8.3374'
   
 #  pod 'TUISearch', '~> 6.8.3374'
   target 'YCIMModule_Tests' do

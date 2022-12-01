@@ -185,7 +185,7 @@ PODS:
   - YCIMModule (0.1.0):
     - YCIMModule/All (= 0.1.0)
   - YCIMModule/All (0.1.0):
-    - YCIMModule/Core
+    - YCIMModule/OneCar
   - YCIMModule/Core (0.1.0):
     - Masonry (~> 1.1.0)
     - TUIChat (~> 6.8.3374)
@@ -194,16 +194,12 @@ PODS:
     - TUIGroup (~> 6.8.3374)
     - TUIOfflinePush (~> 6.8.3374)
     - TXIMSDK_Plus_iOS (~> 6.8.3374)
+  - YCIMModule/OneCar (0.1.0):
+    - JXCategoryView (~> 1.6.1)
+    - YCIMModule/Core
 
 DEPENDENCIES:
-  - JXCategoryView (~> 1.6.1)
   - Masonry (~> 1.1.0)
-  - TUIChat (~> 6.8.3374)
-  - TUIContact (~> 6.8.3374)
-  - TUIConversation (~> 6.8.3374)
-  - TUIGroup (~> 6.8.3374)
-  - TUIOfflinePush (~> 6.8.3374)
-  - TXIMSDK_Plus_iOS (~> 6.8.3374)
   - YCIMModule (from `../`)
 
 SPEC REPOS:
@@ -236,8 +232,8 @@ SPEC CHECKSUMS:
   TUIGroup: 43a0a0f6a8c4882ee4bca3c0735bcad888b7e1aa
   TUIOfflinePush: c627a7c6a1b9ae883e71eded2ac809a36dbaaad2
   TXIMSDK_Plus_iOS: f04fb957e7019f895131b05d37bc555328f5e239
-  YCIMModule: dc5090522d980df617e247fdaffe0323a3096dd5
+  YCIMModule: adb1b033bc8f3a6916b98b4b1a584b1cae140952
 
-PODFILE CHECKSUM: 4918a0da2e72c8d121b25c83d96b14d8d2165a44
+PODFILE CHECKSUM: 0e454d5f2328aec868062b19ea6675582ff816a0
 
 COCOAPODS: 1.11.3

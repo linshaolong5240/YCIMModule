@@ -8,11 +8,11 @@
 
 #import "YCContactViewController.h"
 #import "YIMContactController.h"
-#import <TUIFriendProfileController.h>
-#import <TUINewFriendViewController.h>
-#import <TUIUserProfileController.h>
-#import <TUIGroupConversationListController.h>
-#import <TUIGroupChatViewController.h>
+#import "TUIFriendProfileController.h"
+#import "TUINewFriendViewController.h"
+#import "TUIUserProfileController.h"
+#import "TUIGroupConversationListController.h"
+#import "TUIGroupChatViewController.h"
 
 #import "YIMImage.h"
 #import "YIMManager.h"

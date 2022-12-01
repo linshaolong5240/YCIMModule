@@ -6,7 +6,7 @@
 //  Copyright © 2022 YRYC. All rights reserved.
 //
 
-#import <TUIBaseChatViewController.h>
+#import "TUIBaseChatViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
