@@ -34,11 +34,11 @@ TODO: Add long description of the pod here.
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 #  s.source_files = 'YCIMModule/Classes/**/*'
-  s.default_subspec = 'Core'
+  s.default_subspec = 'OneCar'
 #
   s.subspec "Core" do |core|
       core.source_files = 'YCIMModule/Classes/Core/**/*'
-      core.private_header_files = 'YCIMModule/Classes/Core/**/*.h'
+#      core.private_header_files = 'YCIMModule/Classes/Core/**/*.h'
       core.dependency 'Masonry', '~> 1.1.0'
       core.dependency 'TXIMSDK_Plus_iOS', '~> 6.8.3374'
       core.dependency 'TUICore', '~> 6.8.3374'
