@@ -6,7 +6,7 @@
 //  Copyright © 2022 YRYC. All rights reserved.
 //
 
-#import <TUIChatDataProvider.h>
+#import "TUIChatDataProvider.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

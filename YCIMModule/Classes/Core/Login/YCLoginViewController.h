@@ -6,11 +6,11 @@
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "YCIMBaseViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YCLoginViewController : YCIMBaseViewController
+@interface YCLoginViewController : UIViewController
 
 @end
 

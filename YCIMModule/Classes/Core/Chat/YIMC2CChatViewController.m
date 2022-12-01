@@ -7,13 +7,13 @@
 //
 
 #import "YIMC2CChatViewController.h"
-#import <TUIC2CChatViewController.h>
-#import <TUIBaseChatViewController+ProtectedAPI.h>
-#import <TUILinkCellData.h>
-#import <TUIMessageDataProvider.h>
-#import <TUIChatConfig.h>
-#import <TUIMessageController.h>
-#import <TUICloudCustomDataTypeCenter.h>
+#import "TUIC2CChatViewController.h"
+#import "TUIBaseChatViewController+ProtectedAPI.h"
+#import "TUILinkCellData.h"
+#import "TUIMessageDataProvider.h"
+#import "TUIChatConfig.h"
+#import "TUIMessageController.h"
+#import "TUICloudCustomDataTypeCenter.h"
 
 #import "YIMCustomMessage.h"
 #import "TUIChatDataProvider+YIM.h"

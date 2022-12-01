@@ -8,8 +8,8 @@
 
 #import "YIMPopMenuView.h"
 #import "YIMPopCell.h"
-#import <TUIThemeManager.h>
-#import <UIColor+TUIHexColor.h>
+#import "TUIThemeManager.h"
+#import "UIColor+TUIHexColor.h"
 
 @interface YIMPopMenuView ()<UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 @property (nonatomic, strong) NSMutableArray *data;

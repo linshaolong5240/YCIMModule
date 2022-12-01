@@ -6,7 +6,7 @@
 //  Copyright © 2022 YRYC. All rights reserved.
 //
 
-#import <TUIBubbleMessageCell.h>
+#import "TUIBubbleMessageCell.h"
 #import "YIMOrderMeaageCellData.h"
 
 NS_ASSUME_NONNULL_BEGIN

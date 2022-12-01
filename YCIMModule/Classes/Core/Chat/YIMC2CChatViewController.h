@@ -6,7 +6,7 @@
 //  Copyright © 2022 YRYC. All rights reserved.
 //
 
-#import <TUIC2CChatViewController.h>
+#import "TUIC2CChatViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

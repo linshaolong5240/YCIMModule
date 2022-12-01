@@ -30,13 +30,21 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'YCIMModule/Classes/**/*'
-#  s.default_subspec = 'All'
+#  s.source_files = 'YCIMModule/Classes/**/*'
+  s.default_subspec = 'All'
 #
-#  s.subspec "Core" do |core|
-#      core.source_files = 'YCIMModule/Classes/Core/**/*'
-#      core.private_header_files = 'YCMapKitModule/Classes/Core/**/*.h'
-#  end
+  s.subspec "Core" do |core|
+      core.source_files = 'YCIMModule/Classes/Core/**/*'
+      core.private_header_files = 'YCMapKitModule/Classes/Core/**/*.h'
+      core.dependency 'Masonry', '~> 1.1.0'
+      #IM
+      core.dependency 'TXIMSDK_Plus_iOS', '~> 6.8.3374'
+      core.dependency 'TUIConversation', '~> 6.8.3374'
+      core.dependency 'TUIChat', '~> 6.8.3374'
+      core.dependency 'TUIContact', '~> 6.8.3374'
+      core.dependency 'TUIGroup', '~> 6.8.3374'
+      core.dependency 'TUIOfflinePush', '~> 6.8.3374'
+  end
 #
 #  s.subspec "OneCar" do |onecar|
 #      onecar.source_files = 'YCIMModule/Classes/OneCar/**/*'
@@ -44,10 +52,10 @@ TODO: Add long description of the pod here.
 #      onecar.dependency = "YCIMModule/Core"
 #  end
 #
-#  s.subspec 'All' do |all|
-#      all.dependency "YCIMModule/Core"
+  s.subspec 'All' do |all|
+      all.dependency "YCIMModule/Core"
 #      all.dependency "YCIMModule/OneCar"
-#  end
+  end
 
   # s.resource_bundles = {
   #   'YCIMModule' => ['YCIMModule/Assets/*.png']
