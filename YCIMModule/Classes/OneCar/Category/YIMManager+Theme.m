@@ -26,6 +26,9 @@
     
     TUIRegisterThemeResourcePath([resourceBundle pathForResource:@"TUIContactCustomTheme" ofType:@"bundle"], TUIThemeModuleContact);
     [TUIThemeManager.shareManager applyTheme:themeID forModule:TUIThemeModuleContact];
+    
+    TUIRegisterThemeResourcePath([resourceBundle pathForResource:@"TUIDemoTheme" ofType:@"bundle"], TUIThemeModuleDemo);
+    [TUIThemeManager.shareManager applyTheme:themeID forModule:TUIThemeModuleDemo];
 }
 
 @end
