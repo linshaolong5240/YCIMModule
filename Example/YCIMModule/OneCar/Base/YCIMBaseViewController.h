@@ -1,5 +1,5 @@
 //
-//  YCBaseViewController.h
+//  YCIMBaseViewController.h
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YCBaseViewController : UIViewController <JXCategoryListContentViewDelegate>
+@interface YCIMBaseViewController : UIViewController <JXCategoryListContentViewDelegate>
 
 - (void)showAlertWithTitle:(nullable NSString *)title message:(nullable NSString *)message;
 

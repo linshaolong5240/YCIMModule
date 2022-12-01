@@ -19,10 +19,9 @@
 		18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3A292E026100C34991 /* YIMPopMenuView.m */; };
 		18457C63292E026100C34991 /* YIMPopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C3B292E026100C34991 /* YIMPopCell.m */; };
 		18457C64292E026100C34991 /* YIMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C40292E026100C34991 /* YIMManager.m */; };
-		18457C65292E026100C34991 /* UIButton+YIM.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C43292E026100C34991 /* UIButton+YIM.m */; };
 		18457C66292E026100C34991 /* YIMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C45292E026100C34991 /* YIMImage.m */; };
 		18457C67292E026100C34991 /* YIMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C49292E026100C34991 /* YIMNavigationController.m */; };
-		18457C68292E026100C34991 /* YCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* YCBaseViewController.m */; };
+		18457C68292E026100C34991 /* YCIMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4A292E026100C34991 /* YCIMBaseViewController.m */; };
 		18457C69292E026100C34991 /* YIMConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4C292E026100C34991 /* YIMConversationListController.m */; };
 		18457C6A292E026100C34991 /* YIMConversationFoldListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4D292E026100C34991 /* YIMConversationFoldListViewController.m */; };
 		18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18457C4E292E026100C34991 /* YCMessageViewController.m */; };
@@ -92,14 +91,12 @@
 		18457C3D292E026100C34991 /* YIMPopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMPopCell.h; sourceTree = "<group>"; };
 		18457C3F292E026100C34991 /* YIMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMManager.h; sourceTree = "<group>"; };
 		18457C40292E026100C34991 /* YIMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMManager.m; sourceTree = "<group>"; };
-		18457C42292E026100C34991 /* UIButton+YIM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YIM.h"; sourceTree = "<group>"; };
-		18457C43292E026100C34991 /* UIButton+YIM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YIM.m"; sourceTree = "<group>"; };
 		18457C44292E026100C34991 /* YIMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMImage.h; sourceTree = "<group>"; };
 		18457C45292E026100C34991 /* YIMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMImage.m; sourceTree = "<group>"; };
-		18457C47292E026100C34991 /* YCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCBaseViewController.h; sourceTree = "<group>"; };
+		18457C47292E026100C34991 /* YCIMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCIMBaseViewController.h; sourceTree = "<group>"; };
 		18457C48292E026100C34991 /* YIMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YIMNavigationController.h; sourceTree = "<group>"; };
 		18457C49292E026100C34991 /* YIMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMNavigationController.m; sourceTree = "<group>"; };
-		18457C4A292E026100C34991 /* YCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCBaseViewController.m; sourceTree = "<group>"; };
+		18457C4A292E026100C34991 /* YCIMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCIMBaseViewController.m; sourceTree = "<group>"; };
 		18457C4C292E026100C34991 /* YIMConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMConversationListController.m; sourceTree = "<group>"; };
 		18457C4D292E026100C34991 /* YIMConversationFoldListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YIMConversationFoldListViewController.m; sourceTree = "<group>"; };
 		18457C4E292E026100C34991 /* YCMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMessageViewController.m; sourceTree = "<group>"; };
@@ -145,7 +142,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		765A89ADDB61DB9734B29AE2 /* YCIMModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YCIMModule.podspec; path = ../YCIMModule.podspec; sourceTree = "<group>"; };
+		765A89ADDB61DB9734B29AE2 /* YCIMModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YCIMModule.podspec; path = ../YCIMModule.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		996C753C824EB05855EDDFC5 /* Pods-YCIMModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCIMModule_Tests.release.xcconfig"; path = "Target Support Files/Pods-YCIMModule_Tests/Pods-YCIMModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A24B4681AD8EACF4B32A77B0 /* Pods_YCIMModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCIMModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A281E2E4EE70BFE30A5C68 /* Pods-YCIMModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCIMModule_Example.release.xcconfig"; path = "Target Support Files/Pods-YCIMModule_Example/Pods-YCIMModule_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,13 +228,14 @@
 		18457C2C292E026000C34991 /* OneCar */ = {
 			isa = PBXGroup;
 			children = (
-				189113932934B962008B4D7F /* Controller */,
 				189113892934A311008B4D7F /* Base */,
 				189113872934A22B008B4D7F /* Chat */,
 				18457C35292E026000C34991 /* Contact */,
+				189113932934B962008B4D7F /* Controller */,
 				18457C52292E026100C34991 /* FriendDynamics */,
 				18457C5B292E026100C34991 /* Login */,
 				18457C4B292E026100C34991 /* Message */,
+				18457C55292E026100C34991 /* Resource */,
 			);
 			path = OneCar;
 			sourceTree = "<group>";
@@ -306,15 +304,6 @@
 			path = YIMManager;
 			sourceTree = "<group>";
 		};
-		18457C41292E026100C34991 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				18457C42292E026100C34991 /* UIButton+YIM.h */,
-				18457C43292E026100C34991 /* UIButton+YIM.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		18457C46292E026100C34991 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,7 +367,6 @@
 		1891138629349EC7008B4D7F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				18457C41292E026100C34991 /* Category */,
 				18457C2D292E026000C34991 /* Home */,
 				18457C32292E026000C34991 /* Navigation */,
 			);
@@ -397,8 +385,8 @@
 		189113892934A311008B4D7F /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				18457C47292E026100C34991 /* YCBaseViewController.h */,
-				18457C4A292E026100C34991 /* YCBaseViewController.m */,
+				18457C47292E026100C34991 /* YCIMBaseViewController.h */,
+				18457C4A292E026100C34991 /* YCIMBaseViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -475,7 +463,6 @@
 				1891138629349EC7008B4D7F /* Demo */,
 				18457C2C292E026000C34991 /* OneCar */,
 				18457C38292E026100C34991 /* Core */,
-				18457C55292E026100C34991 /* Resource */,
 				6003F59C195388D20070C39A /* YCAppDelegate.h */,
 				6003F59D195388D20070C39A /* YCAppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -743,13 +730,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18457C65292E026100C34991 /* UIButton+YIM.m in Sources */,
 				183C5A1F29360ED600D27DF8 /* YIMC2CChatViewController.m in Sources */,
 				18457C69292E026100C34991 /* YIMConversationListController.m in Sources */,
 				18457C63292E026100C34991 /* YIMPopCell.m in Sources */,
 				183C120129372C0E0050D19A /* YIMCustomMessage.m in Sources */,
 				18457C6B292E026100C34991 /* YCMessageViewController.m in Sources */,
-				18457C68292E026100C34991 /* YCBaseViewController.m in Sources */,
+				18457C68292E026100C34991 /* YCIMBaseViewController.m in Sources */,
 				18457C72292E026100C34991 /* YCLoginViewController.m in Sources */,
 				18457C62292E026100C34991 /* YIMPopMenuView.m in Sources */,
 				1891139A2934E09C008B4D7F /* YCTemporaryConversationViewController.m in Sources */,
@@ -902,8 +888,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YCIMModule/YCIMModule-Prefix.pch";
 				INFOPLIST_FILE = "YCIMModule/YCIMModule-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_CFBundleDisplayName = YCIMModule_Example;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "语音功能权限";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -927,8 +914,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YCIMModule/YCIMModule-Prefix.pch";
 				INFOPLIST_FILE = "YCIMModule/YCIMModule-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_CFBundleDisplayName = YCIMModule_Example;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Privacy - Camera Usage Description";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "语音功能权限";
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

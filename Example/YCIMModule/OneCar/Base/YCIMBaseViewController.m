@@ -1,18 +1,18 @@
 //
-//  YCBaseViewController.m
+//  YCIMBaseViewController.m
 //  YCIMModule
 //
 //  Created by Sauron on 2022/11/18.
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "YCBaseViewController.h"
+#import "YCIMBaseViewController.h"
 
-@interface YCBaseViewController ()
+@interface YCIMBaseViewController ()
 
 @end
 
-@implementation YCBaseViewController
+@implementation YCIMBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

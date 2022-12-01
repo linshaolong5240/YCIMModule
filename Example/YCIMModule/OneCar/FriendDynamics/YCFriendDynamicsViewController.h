@@ -6,11 +6,11 @@
 //  Copyright © 2022 sauronpi. All rights reserved.
 //
 
-#import "YCBaseViewController.h"
+#import "YCIMBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YCFriendDynamicsViewController : YCBaseViewController
+@interface YCFriendDynamicsViewController : YCIMBaseViewController
 
 @end
 
