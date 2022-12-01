@@ -380,32 +380,18 @@
 				"${PODS_ROOT}/TUIChat/TUIChat/Resources/TUIChat.bundle",
 				"${PODS_ROOT}/TUIChat/TUIChat/Resources/TUIChatFace.bundle",
 				"${PODS_ROOT}/TUIChat/TUIChat/Resources/TUIChatTheme.bundle",
-				"${PODS_ROOT}/TUIContact/TUIContact/Resources/TUIContact.bundle",
-				"${PODS_ROOT}/TUIContact/TUIContact/Resources/TUIContactTheme.bundle",
-				"${PODS_ROOT}/TUIConversation/TUIConversation/Resources/TUIConversation.bundle",
-				"${PODS_ROOT}/TUIConversation/TUIConversation/Resources/TUIConversationTheme.bundle",
 				"${PODS_ROOT}/TUICore/TUICore/Resources/TUICore.bundle",
 				"${PODS_ROOT}/TUICore/TUICore/Resources/TUICoreTheme.bundle",
 				"${PODS_ROOT}/TUICore/TUICore/Resources/TUIKitLocalizable.bundle",
-				"${PODS_ROOT}/TUIGroup/TUIGroup/Resources/TUIGroup.bundle",
-				"${PODS_ROOT}/TUIGroup/TUIGroup/Resources/TUIGroupTheme.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/YCIMModule/YCIMModule.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIChat.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIChatFace.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIChatTheme.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIContact.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIContactTheme.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIConversation.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIConversationTheme.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUICore.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUICoreTheme.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIKitLocalizable.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIGroup.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TUIGroupTheme.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YCIMModule.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

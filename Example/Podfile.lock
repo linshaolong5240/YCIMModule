@@ -1,5 +1,4 @@
 PODS:
-  - JXCategoryView (1.6.1)
   - Masonry (1.1.0)
   - ReactiveObjC (3.1.1)
   - SDWebImage (5.14.2):
@@ -103,46 +102,6 @@ PODS:
     - TUICore (= 6.8.3374)
   - TUIChat/VoiceConvert (6.8.3374):
     - TUICore (= 6.8.3374)
-  - TUIContact (6.8.3374):
-    - TUIContact/Cell (= 6.8.3374)
-    - TUIContact/DataProvider (= 6.8.3374)
-    - TUIContact/Header (= 6.8.3374)
-    - TUIContact/Service (= 6.8.3374)
-    - TUIContact/UI (= 6.8.3374)
-  - TUIContact/Cell (6.8.3374):
-    - TUIContact/Cell/CellData (= 6.8.3374)
-    - TUIContact/Cell/CellUI (= 6.8.3374)
-  - TUIContact/Cell/CellData (6.8.3374):
-    - TUICore (= 6.8.3374)
-  - TUIContact/Cell/CellUI (6.8.3374):
-    - TUIContact/Cell/CellData
-  - TUIContact/DataProvider (6.8.3374):
-    - TUIContact/Cell
-  - TUIContact/Header (6.8.3374)
-  - TUIContact/Service (6.8.3374):
-    - TUIContact/UI
-  - TUIContact/UI (6.8.3374):
-    - TUIContact/DataProvider
-  - TUIConversation (6.8.3374):
-    - TUIConversation/Cell (= 6.8.3374)
-    - TUIConversation/DataProvider (= 6.8.3374)
-    - TUIConversation/Header (= 6.8.3374)
-    - TUIConversation/Service (= 6.8.3374)
-    - TUIConversation/UI (= 6.8.3374)
-  - TUIConversation/Cell (6.8.3374):
-    - TUIConversation/Cell/CellData (= 6.8.3374)
-    - TUIConversation/Cell/CellUI (= 6.8.3374)
-  - TUIConversation/Cell/CellData (6.8.3374):
-    - TUICore (= 6.8.3374)
-  - TUIConversation/Cell/CellUI (6.8.3374):
-    - TUIConversation/Cell/CellData
-  - TUIConversation/DataProvider (6.8.3374):
-    - TUIConversation/Cell
-  - TUIConversation/Header (6.8.3374)
-  - TUIConversation/Service (6.8.3374):
-    - TUIConversation/UI
-  - TUIConversation/UI (6.8.3374):
-    - TUIConversation/DataProvider
   - TUICore (6.8.3374):
     - ReactiveObjC
     - SDWebImage
@@ -155,48 +114,12 @@ PODS:
     - SDWebImage
     - TUICore/Base
     - TXIMSDK_Plus_iOS (= 6.8.3374)
-  - TUIGroup (6.8.3374):
-    - TUIGroup/Cell (= 6.8.3374)
-    - TUIGroup/DataProvider (= 6.8.3374)
-    - TUIGroup/Header (= 6.8.3374)
-    - TUIGroup/Service (= 6.8.3374)
-    - TUIGroup/UI (= 6.8.3374)
-  - TUIGroup/Cell (6.8.3374):
-    - TUIGroup/Cell/CellData (= 6.8.3374)
-    - TUIGroup/Cell/CellUI (= 6.8.3374)
-  - TUIGroup/Cell/CellData (6.8.3374):
-    - TUICore (= 6.8.3374)
-  - TUIGroup/Cell/CellUI (6.8.3374):
-    - TUIGroup/Cell/CellData
-  - TUIGroup/DataProvider (6.8.3374):
-    - TUIGroup/Cell
-  - TUIGroup/Header (6.8.3374)
-  - TUIGroup/Service (6.8.3374):
-    - TUIGroup/UI
-  - TUIGroup/UI (6.8.3374):
-    - TUIGroup/DataProvider
-  - TUIOfflinePush (6.8.3374):
-    - TUIOfflinePush/APNS (= 6.8.3374)
-  - TUIOfflinePush/APNS (6.8.3374):
-    - TUIOfflinePush/Base
-  - TUIOfflinePush/Base (6.8.3374):
-    - TUICore (= 6.8.3374)
   - TXIMSDK_Plus_iOS (6.8.3374)
   - YCIMModule (0.1.0):
-    - YCIMModule/All (= 0.1.0)
-  - YCIMModule/All (0.1.0):
-    - YCIMModule/OneCar
+    - YCIMModule/Core (= 0.1.0)
   - YCIMModule/Core (0.1.0):
     - Masonry (~> 1.1.0)
     - TUIChat (~> 6.8.3374)
-    - TUIContact (~> 6.8.3374)
-    - TUIConversation (~> 6.8.3374)
-    - TUIGroup (~> 6.8.3374)
-    - TUIOfflinePush (~> 6.8.3374)
-    - TXIMSDK_Plus_iOS (~> 6.8.3374)
-  - YCIMModule/OneCar (0.1.0):
-    - JXCategoryView (~> 1.6.1)
-    - YCIMModule/Core
 
 DEPENDENCIES:
   - Masonry (~> 1.1.0)
@@ -204,16 +127,11 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - JXCategoryView
     - Masonry
     - ReactiveObjC
     - SDWebImage
     - TUIChat
-    - TUIContact
-    - TUIConversation
     - TUICore
-    - TUIGroup
-    - TUIOfflinePush
     - TXIMSDK_Plus_iOS
 
 EXTERNAL SOURCES:
@@ -221,18 +139,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
   TUIChat: 4aee85ba2c24dcd1d6496b03d408f02489e2d9c4
-  TUIContact: 40505fd7b987baf534cf28fe6afc2513f1f3783d
-  TUIConversation: 779912e232de60db56289b5fc3d9436d761b0c1a
   TUICore: 6bda7c8642129b3cbd20d8b7053b332fd57c617e
-  TUIGroup: 43a0a0f6a8c4882ee4bca3c0735bcad888b7e1aa
-  TUIOfflinePush: c627a7c6a1b9ae883e71eded2ac809a36dbaaad2
   TXIMSDK_Plus_iOS: f04fb957e7019f895131b05d37bc555328f5e239
-  YCIMModule: 3b528ae29c3a2cff33552ae28ad598ef0eee3f98
+  YCIMModule: 16abef92d701107d167c11f1e4e8d15ea624bda4
 
 PODFILE CHECKSUM: 0e454d5f2328aec868062b19ea6675582ff816a0
 

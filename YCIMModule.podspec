@@ -29,18 +29,19 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+#  s.static_framework = true
+#  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+#  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 #  s.source_files = 'YCIMModule/Classes/**/*'
-  s.default_subspec = 'All'
+  s.default_subspec = 'Core'
 #
   s.subspec "Core" do |core|
       core.source_files = 'YCIMModule/Classes/Core/**/*'
-#      core.private_header_files = 'YCIMModule/Classes/Core/**/*.h'
+      core.private_header_files = 'YCIMModule/Classes/Core/**/*.h'
       core.dependency 'Masonry', '~> 1.1.0'
-      #IM
       core.dependency 'TXIMSDK_Plus_iOS', '~> 6.8.3374'
+      core.dependency 'TUICore', '~> 6.8.3374'
       core.dependency 'TUIConversation', '~> 6.8.3374'
       core.dependency 'TUIChat', '~> 6.8.3374'
       core.dependency 'TUIContact', '~> 6.8.3374'
@@ -56,10 +57,6 @@ TODO: Add long description of the pod here.
       }
       onecar.dependency "YCIMModule/Core"
       onecar.dependency 'JXCategoryView', '~> 1.6.1'
-  end
-
-  s.subspec 'All' do |all|
-      all.dependency "YCIMModule/OneCar"
   end
 
 #   s.resource_bundles = {
